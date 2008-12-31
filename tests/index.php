@@ -2,7 +2,7 @@
 <head>
 <title>AutoEmbed Testing Suite</title>
 <style>
-body {font-family:helvetica;font-size:12px;}
+body,p,pre {font-family:helvetica;font-size:11px;}
 ul {list-style:none;padding:0;margin:0;}
 li {width:180px;float:left;}
 li a {display:block;padding:2px 5px;}
@@ -31,6 +31,7 @@ $ae = new AutoEmbed();
 
 <? if (!empty($_GET['url'])) { ?>
   <div style="background:#eee;padding:20px;margin-top:15px;">
+  <h2><?=$_GET['url']?></h2>
   <?
   if ($ae->parseUrl($_GET['url'])) {
     // Construct HTML tag for embedding the video
@@ -41,14 +42,17 @@ $ae = new AutoEmbed();
     <table cellspacing="10">
       <tr>
         <td><?=$embed_tag?></td>
-        <td>
+        <td valign="top">
           <h2><?=$params['title']?></h2>
-          <pre style="font-size:11px;"><?var_dump($params)?></pre>
+          <h4>Params</h4>
+          <pre><?var_dump($params)?></pre>
+          <h4>Embed Code</h4>
+          <pre><?=htmlspecialchars($embed_tag)?></pre>
         </td>
       </tr>
     </table>
   <? } else { ?>
-    <h2>Could not obtain video metadata for site: <?=$params['title']?></h2>
+    <h3>Could not obtain video metadata for site: <?=$params['title']?></h3>
   <? } ?>
   </div>
 <? } ?>
