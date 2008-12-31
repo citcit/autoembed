@@ -27,8 +27,6 @@ class AutoEmbed {
   /**
    * AutoEmbed Constructor
    *
-   * @param $url string - href to check for embeded video
-   *
    * returns object - AutoEmbed object
    */
   public function __construct() {
