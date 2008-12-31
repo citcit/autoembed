@@ -29,7 +29,9 @@ $ae = new AutoEmbed();
 echo "<h1>AutoEmbed Testing Suite</h1>\n";
 echo "<table>\n";
 
+$i = 0;
 foreach ($test_urls as $site=>$url) {
+  $i++;
   echo "<tr>\n";
 
   // Parse new URL
@@ -55,6 +57,7 @@ foreach ($test_urls as $site=>$url) {
 
 
   echo "</tr>\n";
+  if ($i > 10) break; // exit after 10 to keep browser from crashing :)
 }
 echo "</table>\n";
 ?>
