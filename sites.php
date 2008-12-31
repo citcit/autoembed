@@ -1,6 +1,11 @@
 <?php
 /**
  * This file is part of AutoEmbed.
+ * http://code.google.com/p/autoembed/
+ *
+ * Some regular expressions found in this file were borrowed 
+ * from Karl Benson & Rene-Gilles Deberdt.
+ *
  *
  * AutoEmbed is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -16,10 +21,8 @@
  * along with AutoEmbed.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-/* Explanation of items
-	Mandatory ones must be specified, however if it defaults to something, it won't cause a problem if its left off. Optional ones aren't needed.
-	All [regex] patterns are only partial. So don't specify delimiters etc.  The regex is completed when its used.
-
+/**
+  Example:
 	array(
 		'id' =>					Unique 3 chars comprising A-Z0-9 (must not be any other item with the same ID) eg YTB for YouTube	(Mandatory)
 		'title' =>				Title of the Website - shown in the Admin cp for each site as hover link title					(Mandatory)
