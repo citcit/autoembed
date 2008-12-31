@@ -1,63 +1,60 @@
+<html>
+<head>
+<title>AutoEmbed Testing Suite</title>
+<style>
+body {font-family:helvetica;font-size:12px;}
+ul {list-style:none;padding:0;margin:0;}
+li {width:180px;float:left;}
+li a {display:block;padding:2px 5px;}
+li a:hover {background:#eee;}
+</style>
+<body>
 <?php
-/**
- * This file is part of AutoEmbed.
- * http://code.google.com/p/autoembed/
- *
- * AutoEmbed is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- * 
- * AutoEmbed is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with AutoEmbed.  If not, see <http://www.gnu.org/licenses/>.
- */
-
 error_reporting(E_ALL);
-
-require_once 'AutoEmbed.class.php';
-
-require_once 'data/test_urls.php';
+require_once '../AutoEmbed.class.php';
+require_once '../data/test_urls.php';
 global $test_urls;
 
 $ae = new AutoEmbed();
+?>
 
-echo "<h1>AutoEmbed Testing Suite</h1>\n";
-echo "<table>\n";
 
-$i = 0;
-foreach ($test_urls as $site=>$url) {
-  $i++;
-  echo "<tr>\n";
+<h1>AutoEmbed Testing Suite</h1>
+<p>Select a site to test.</p>
+<ul>
+<? foreach ($test_urls as $site=>$url) { ?>
+  <li><a href="?url=<?=$url?>"><?=$site?></a></li>
+<? } ?>
+</ul>
+<br style="clear:both;" />
 
+
+<? if (!empty($_GET['url'])) { ?>
+  <div style="background:#eee;padding:20px;margin-top:15px;">
+  <?
   // Parse new URL
-  if (!$ae->parseUrl($url)) {
-    echo "<td colspan=\"2\"><h2>Error finding video metadata from {$site}.</h2></td>";
-    continue;
+  if (!$ae->parseUrl($_GET['url'])) {
+    echo "<h2>Error finding video metadata from {$site}.</h2>\n";
   }
 
   // Construct HTML tag for embedding the video
   $embed_tag = $ae->getEmbedCode();
-  echo "<td><pre>";
-  echo $embed_tag;
-  #echo "<br />";
-  #echo htmlspecialchars($embed_tag);
-  echo "</pre></td>";
-
   // Extract the video's media params  (movie url, width, height, media type, etc)
   $params = $ae->getParams();
-  echo "<td>";
-  echo "<h2>{$site}</h2>\n";
-  var_dump($params);
-  echo "</td>";
+  ?>
+
+  <table cellspacing="10">
+    <tr>
+      <td><?=$embed_tag?></td>
+      <td>
+        <h2><?=$params['title']?></h2>
+        <pre style="font-size:11px;"><?var_dump($params)?></pre>
+      </td>
+    </tr>
+  </table>
+  </div>
+<? } ?>
 
 
-  echo "</tr>\n";
-  if ($i > 10) break; // exit after 10 to keep browser from crashing :)
-}
-echo "</table>\n";
-?>
+</body>
+</html>
