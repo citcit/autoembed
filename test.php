@@ -21,24 +21,40 @@ error_reporting(E_ALL);
 
 require_once 'AutoEmbed.class.php';
 
+require_once 'test_urls.php';
+global $test_urls;
+
 $ae = new AutoEmbed();
-if (!$ae->parseUrl('http://www.youtube.com/watch?v=NbwpgyRUv5g')) {
-  echo('Error finding video metadata.');
+
+echo "<h1>AutoEmbed Testing Suite</h1>\n";
+echo "<table>\n";
+
+foreach ($test_urls as $site=>$url) {
+  echo "<tr>\n";
+
+  // Parse new URL
+  if (!$ae->parseUrl($url)) {
+    echo "<td colspan=\"2\"><h2>Error finding video metadata from {$site}.</h2></td>";
+    continue;
+  }
+
+  // Construct HTML tag for embedding the video
+  $embed_tag = $ae->getEmbedCode();
+  echo "<td><pre>";
+  echo $embed_tag;
+  #echo "<br />";
+  #echo htmlspecialchars($embed_tag);
+  echo "</pre></td>";
+
+  // Extract the video's media params  (movie url, width, height, media type, etc)
+  $params = $ae->getParams();
+  echo "<td>";
+  echo "<h2>{$site}</h2>\n";
+  var_dump($params);
+  echo "</td>";
+
+
+  echo "</tr>\n";
 }
-
-// Extract the video's media params  (movie url, width, height, media type, etc)
-$params = $ae->getParams();
-echo "<h2>Params</h2>\n";
-echo "<pre>";
-var_dump($params);
-echo "</pre>";
-
-// Construct HTML tag for embedding the video
-$embed_tag = $ae->getEmbedCode();
-echo "<h2>Embed Code</h2>\n";
-echo "<pre>";
-echo $embed_tag;
-echo "<br />";
-echo htmlspecialchars($embed_tag);
-echo "</pre>";
+echo "</table>\n";
 ?>
