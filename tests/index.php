@@ -32,26 +32,24 @@ $ae = new AutoEmbed();
 <? if (!empty($_GET['url'])) { ?>
   <div style="background:#eee;padding:20px;margin-top:15px;">
   <?
-  // Parse new URL
-  if (!$ae->parseUrl($_GET['url'])) {
-    echo "<h2>Error finding video metadata from {$site}.</h2>\n";
-  }
-
-  // Construct HTML tag for embedding the video
-  $embed_tag = $ae->getEmbedCode();
-  // Extract the video's media params  (movie url, width, height, media type, etc)
-  $params = $ae->getParams();
-  ?>
-
-  <table cellspacing="10">
-    <tr>
-      <td><?=$embed_tag?></td>
-      <td>
-        <h2><?=$params['title']?></h2>
-        <pre style="font-size:11px;"><?var_dump($params)?></pre>
-      </td>
-    </tr>
-  </table>
+  if ($ae->parseUrl($_GET['url'])) {
+    // Construct HTML tag for embedding the video
+    $embed_tag = $ae->getEmbedCode();
+    // Extract the video's media params  (movie url, width, height, media type, etc)
+    $params = $ae->getParams();
+    ?>
+    <table cellspacing="10">
+      <tr>
+        <td><?=$embed_tag?></td>
+        <td>
+          <h2><?=$params['title']?></h2>
+          <pre style="font-size:11px;"><?var_dump($params)?></pre>
+        </td>
+      </tr>
+    </table>
+  <? } else { ?>
+    <h2>Could not obtain video metadata for site: <?=$params['title']?></h2>
+  <? } ?>
   </div>
 <? } ?>
 
