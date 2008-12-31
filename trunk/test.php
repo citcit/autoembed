@@ -21,7 +21,7 @@ error_reporting(E_ALL);
 
 require_once 'AutoEmbed.class.php';
 
-require_once 'test_urls.php';
+require_once 'data/test_urls.php';
 global $test_urls;
 
 $ae = new AutoEmbed();
