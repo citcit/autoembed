@@ -17,8 +17,6 @@
  * along with AutoEmbed.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-require_once 'sites.php';
-
 class AutoEmbed {
   
   private $_url;
@@ -31,6 +29,9 @@ class AutoEmbed {
    * returns object - AutoEmbed object
    */
   public function __construct() {
+    global $sites;
+
+    include 'sites.php';
   }
 
   /**
