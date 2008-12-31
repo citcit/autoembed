@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<package version="1.0">
+ <name>HTML_AutoEmbed</name>
+ <summary>Extracts and manipulates video metadata from a given URL.</summary>
+ <description>
+  AutoEmbed extracts video metadata from a given URL and constructs HTML embed tags from a list of supported sites.
+ </description>
+ <license>LGPL License</license>
+ <maintainers>
+  <maintainer>
+   <user>openface</user>
+   <name>Jason Hines</name>
+   <email>jhines@gmail.com</email>
+   <role>lead</role>
+  </maintainer>
+  <maintainer>
+   <user>phpuser</user>
+   <name>Corey Wilson</name>
+   <email>phpuser@gmail.com</email>
+   <role>lead</role>
+  </maintainer>
+ </maintainers>
+ <release>
+  <version>1.0</version>
+  <date>2008-12-31</date>
+  <state>alpha</state>
+  <notes>
+   Initial alpha release.
+  </notes>
+  <filelist>
+   <dir name="/" baseinstalldir="HTML">
+    <file name="AutoEmbed.class.php" role="php" />
+    <file name="sites.php" role="php" />
+    <file name="test.php" role="php" />
+    <file name="README" role="doc" />
+   </dir>
+  </filelist>
+ </release>
+</package>
