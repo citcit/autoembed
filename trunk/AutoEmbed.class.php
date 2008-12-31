@@ -31,8 +31,17 @@ class AutoEmbed {
    *
    * returns object - AutoEmbed object
    */
-  public function __construct($url) {
+  public function __construct() {
+  }
 
+  /**
+   * Parse given URL
+   *
+   * @param $url string - href to check for embeded video
+   *
+   * returns boolean - whether or not the url contains valid/supported video
+   */
+  public function parseUrl($url) {
     global $sites;
     $this->url = $url;
 
@@ -40,21 +49,21 @@ class AutoEmbed {
       if ( preg_match('~'.$site['embed-pattern'].'~imu', $url, $match) ) {
         $this->_video_id = $match;
         $this->_site = $site;
-        break;
+        return true;
       }
     }
 
     unset($site);
+    return false;
   }
 
   /**
-   * Check to see if this url is from a known site and 
-   * we are able to create an embed object for it
+   * Return params about the video metadata
    *
-   * returns boolean - true if we can, false if we can't
+   * returns array - video metadata
    */
-  public function is_embedable() {
-    return is_array($this->_video_id);
+  public function getParams() {
+    return $this->_site;
   }
 
   /**
@@ -62,7 +71,7 @@ class AutoEmbed {
    *
    * returns string - the embed html
    */
-  public function to_embed() {
+  public function getEmbedCode() {
     $plugin = $this->_get_plugin($this->_site['plugin']);
 
     $params = $this->_build_params($plugin['params']);
