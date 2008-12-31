@@ -30,8 +30,8 @@
   <filelist>
    <dir name="/" baseinstalldir="HTML">
     <file name="AutoEmbed.class.php" role="php" />
-    <file name="sites.php" role="php" />
-    <file name="test.php" role="php" />
+    <file name="sites.php" role="data" />
+    <file name="test.php" role="test" />
     <file name="README" role="doc" />
    </dir>
   </filelist>
