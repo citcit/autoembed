@@ -38,5 +38,7 @@ $embed_tag = $ae->getEmbedCode();
 echo "<h2>Embed Code</h2>\n";
 echo "<pre>";
 echo $embed_tag;
+echo "<br />";
+echo htmlspecialchars($embed_tag);
 echo "</pre>";
 ?>
