@@ -164,7 +164,7 @@ $test_urls = array(
    'RawVegas' => 'http://www.rawvegas.tv/watch.php?vID=449f9394c456a4fb3f3b30de5c6bfd',
    'ScreenToaster' => 'http://www.screentoaster.com/watch/stV0pWS0VLRllbQV1ZXFlf',
    'Seeqpod' => 'http://www.seeqpod.net/search/?plid=3e10a35644',
-   'SevenLoad' => 'http://en.sevenload.com/videos/8DbE5eku-Numanumaye',
+   'SevenLoad' => 'http://en.sevenload.com/videos/GIaE01F-Classic-Television-Commercials-Part-I',
    'ShareView' => 'http://www.shareview.us/view/344/best-of-family-guy-really-funny/',
    'Sharkle' => 'http://www.sharkle.com/externalPlayer/59083/4iyii41ya/3/',
    'Sina Podcast' => 'http://you.video.sina.com.cn/b/15860970-1511607405.html',
