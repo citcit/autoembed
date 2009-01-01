@@ -26,7 +26,7 @@ $ae = new AutoEmbed();
 <p>Select a site to test.</p>
 <ul>
 <? foreach ($test_urls as $site=>$url) { ?>
-  <li><a href="?url=<?=$url?>"><?=$site?></a></li>
+  <li><a href="?url=<?=$url?>" title="Test: <?=$url?>"><?=$site?></a></li>
 <? } ?>
 </ul>
 <br style="clear:both;" />
