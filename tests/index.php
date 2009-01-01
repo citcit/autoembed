@@ -3,6 +3,10 @@
 <title>AutoEmbed Testing Suite</title>
 <style>
 body,p,pre {font-family:helvetica;font-size:11px;}
+textarea {width:100%;height:150px;}
+h1,h2,h3
+h2 {margin-bottom:0;}
+p {margin-top:0;}
 ul {list-style:none;padding:0;margin:0;}
 li {width:180px;float:left;}
 li a {display:block;padding:2px 5px;}
@@ -31,7 +35,6 @@ $ae = new AutoEmbed();
 
 <? if (!empty($_GET['url'])) { ?>
   <div style="background:#eee;padding:20px;margin-top:15px;">
-  <h2><?=$_GET['url']?></h2>
   <?
   if ($ae->parseUrl($_GET['url'])) {
     // Construct HTML tag for embedding the video
@@ -39,15 +42,20 @@ $ae = new AutoEmbed();
     // Extract the video's media params  (movie url, width, height, media type, etc)
     $params = $ae->getParams();
     ?>
-    <table cellspacing="10">
+    <table border="0">
       <tr>
-        <td><?=$embed_tag?></td>
-        <td valign="top">
+        <td colspan="2" style="padding-bottom:10px;">
           <h2><?=$params['title']?></h2>
+          <p><b>Test URL:</b> <a href="<?=$_GET['url']?>" target="_new"><?=$_GET['url']?></a></p>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top"><?=$embed_tag?></td>
+        <td valign="top" style="padding-left:10px">
+          <h4>Embed Code</h4>
+          <textarea><?=htmlspecialchars($embed_tag)?></textarea>
           <h4>Params</h4>
           <pre><?var_dump($params)?></pre>
-          <h4>Embed Code</h4>
-          <pre><?=htmlspecialchars($embed_tag)?></pre>
         </td>
       </tr>
     </table>
