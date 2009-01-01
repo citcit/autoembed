@@ -2,10 +2,9 @@
 <head>
 <title>AutoEmbed Testing Suite</title>
 <style>
-body,p,pre {font-family:helvetica;font-size:11px;}
+body,p {font-family:helvetica;font-size:11px;}
 textarea {width:100%;height:150px;}
-h1,h2,h3
-h2 {margin-bottom:0;}
+h1,h2 {margin-bottom:0;}
 p {margin-top:0;}
 ul {list-style:none;padding:0;margin:0;}
 li {width:180px;float:left;}
@@ -42,7 +41,7 @@ $ae = new AutoEmbed();
     // Extract the video's media params  (movie url, width, height, media type, etc)
     $params = $ae->getParams();
     ?>
-    <table border="0">
+    <table border="0" width="100%">
       <tr>
         <td colspan="2" style="padding-bottom:10px;">
           <h2><?=$params['title']?></h2>
