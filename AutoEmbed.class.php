@@ -83,15 +83,11 @@ class AutoEmbed {
    * returns string - the embed html
    */
   public function getEmbedCode() {
-    $object_html = $this->_buildObject();
-    $this->_injectId($object_html);
-
-    return $object_html;
+    return $this->_buildObject();
   }
 
   /**
    * Override a default param value
-   *
    *
    * @param $param string - the name of the param to be set
    * @param $value string - the value to set the param to
@@ -100,11 +96,9 @@ class AutoEmbed {
    *                   if parseURL hasn't been called yet
    */
   public function setParam($param, $value) {
-
     if (!is_array($this->_params)) return false;
 
     $this->_params[$param] = $value;
-
     return true;
   }
 
@@ -137,22 +131,17 @@ class AutoEmbed {
     return $object_html . $param_html . $embed_html . '</object>';
   }
 
-  /**
-   * Inject the id of the object we're embeding into the
-   * object skeleton
-   */
-  private function _injectId(&$object_html) {
-    for ($i=1; $i<=count($this->_video_id); $i++) {
-      $object_html = str_ireplace('$'.$i, $this->_video_id[$i - 1], $object_html);
-    }
-  }
-
   
   /**
    * Set the default params for the type of
    * site we are working with
    */
   private function _setDefaultParams() {
+
+    for ($i=1; $i<=count($this->_video_id); $i++) {
+      $source = str_ireplace('$'.$i, $this->_video_id[$i - 1], $this->_site['embed-movie']);
+    }
+    
     $this->_params = array(
             'wmode' => 'transparent',
             'quality' => 'high',
@@ -163,10 +152,10 @@ class AutoEmbed {
             'autostart' => 'false',
             'width' => $this->_site['embed-width'] . 'px',
             'height' => $this->_site['embed-height'] . 'px',
-            'src' => $this->_site['embed-movie'],
-           );
-            
+            'src' => $source,
+           );   
   }
+
 }
 
 ?>
