@@ -88,7 +88,7 @@ $test_urls = array(
    'GameKyo' => 'http://www.gamekyo.com/video12982_tales-of-hearts-cg-new-video.html',
    'GameSpot' => 'http://uk.gamespot.com/ps3/adventure/residentevil5/video/6191975/resident-evil-5-interview',
    'GameTrailers (inc. User Movies)' => 'http://www.gametrailers.com/player/usermovies/258940.html',
-   'GameTube' => 'http://www.gametube.org/#/video/C/66yt67h3i00TvlCxFLd_m16dEY=',
+   'GameTube' => 'http://www.gametube.org/?#/video/J/4TZF45mGCjQAm_n8w_9V4PfVfw=',
    'GameVideos.1up' => 'http://gamevideos.1up.com/video/id/21213',
    'GarageTv' => 'http://www.garagetv.be/v/S5cyfREd!EvQBVM8-ZXkwFPSjFFxoVnf0LSagycZ8pH--wBBPzAyy!usb-Wfkfbas5/v.aspx',
    'Gloria' => 'http://www.gloria.tv/?video=m0icjgniybkvnuclkbvy',
