@@ -31,7 +31,7 @@ class AutoEmbed {
   public function __construct() {
     global $sites;
 
-    include_once 'data/sites.php';
+    include_once 'sites.php';
   }
 
   /**
