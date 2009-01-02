@@ -703,7 +703,7 @@ $sites = array(
 		'type' => 'video',
 		'plugin' => 'flash',
 		'embed-pattern' => 'http://(?:www\.|www2\.)?funnyordie\.com/(?:videos/|public/flash/fodplayer\.swf\?key=)([0-9a-z]{8,12})',
-		'embed-movie' => 'http://www2.funnyordie.com/public/flash/fodplayer.swf?key=$2',
+		'embed-movie' => 'http://player.ordienetworks.com/flash/fodplayer.swf?key=$2',
 		'embed-width' => '464',
 		'embed-height' => '388',
 	),
