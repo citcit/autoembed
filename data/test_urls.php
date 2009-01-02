@@ -83,7 +83,7 @@ $test_urls = array(
    'ESPN' => 'http://sports.espn.go.com/broadband/video/videopage?categoryId=2521705&brand=null&videoId=3557384&n8pe6c=2',
    'Excessif (DVDrama)' => 'http://www.excessif.com/video/index.php?flashvideo=watchmen_trailer_fr.flv',
    'Facebook' => 'http://www.facebook.com/video/video.php?v=65568150143',
-   'FunnyOrDie' => 'http://www.funnyordie.com/videos/dfef96ec31',
+   'FunnyOrDie' => 'http://www.funnyordie.com/videos/aac8052585/15000yellow-postits-from-aaronlson5',
    'G4TV' => 'http://www.g4tv.com/xplay/videos/28510/Rock_Band_2_Launch_Party_All_Access.html',
    'GameKyo' => 'http://www.gamekyo.com/video12982_tales-of-hearts-cg-new-video.html',
    'GameSpot' => 'http://uk.gamespot.com/ps3/adventure/residentevil5/video/6191975/resident-evil-5-interview',

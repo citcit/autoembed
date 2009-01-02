@@ -59,7 +59,7 @@ $ae = new AutoEmbed();
       </tr>
     </table>
   <? } else { ?>
-    <h3>Could not obtain video metadata for site: <?=$params['title']?></h3>
+    <h3>Could not obtain video metadata for URL: <a href="<?=$_GET['url']?>" target="_new"><?=$_GET['url']?></a></h3>
   <? } ?>
   </div>
 <? } ?>
