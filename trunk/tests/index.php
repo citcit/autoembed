@@ -26,7 +26,7 @@ $ae = new AutoEmbed();
 <p>Select a site to test.</p>
 <ul>
 <? foreach ($test_urls as $site=>$url) { ?>
-  <li><a href="?url=<?=$url?>" title="Test: <?=$url?>"><?=$site?></a></li>
+  <li><a href="?url=<?=urlencode($url)?>" title="Test: <?=$url?>"><?=$site?></a></li>
 <? } ?>
 </ul>
 <br style="clear:both;" />
@@ -35,7 +35,7 @@ $ae = new AutoEmbed();
 <? if (!empty($_GET['url'])) { ?>
   <div style="background:#eee;padding:20px;margin-top:15px;">
   <?
-  if ($ae->parseUrl($_GET['url'])) {
+  if ($ae->parseUrl(urldecode($_GET['url']))) {
     // Construct HTML tag for embedding the video
     $embed_tag = $ae->getEmbedCode();
     // Extract the video's media params  (movie url, width, height, media type, etc)
@@ -45,7 +45,7 @@ $ae = new AutoEmbed();
       <tr>
         <td colspan="2" style="padding-bottom:10px;">
           <h2><?=$params['title']?></h2>
-          <p><b>Test URL:</b> <a href="<?=$_GET['url']?>" target="_new"><?=$_GET['url']?></a></p>
+          <p><b>Test URL &rarr;</b> <a href="<?=$_GET['url']?>" target="_new"><?=$_GET['url']?></a></p>
         </td>
       </tr>
       <tr>
