@@ -44,7 +44,7 @@ $ae = new AutoEmbed();
     <table border="0" width="100%">
       <tr>
         <td colspan="2" style="padding-bottom:10px;">
-          <h2><?=$ae->getHost()?></h2>
+          <h2><?=$ae->getHost('title')?></h2>
           <p><b>Test URL &rarr;</b> <a href="<?=$_GET['url']?>" target="_new"><?=$_GET['url']?></a></p>
         </td>
       </tr>
