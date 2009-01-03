@@ -102,7 +102,7 @@ class AutoEmbed {
    * @return boolean - true if the value was set, false
    *                   if parseURL hasn't been called yet
    */
-  public function setParam($param, $value) {
+  public function setParam($param, $value = '') {
     if (!is_array($this->_params)) return false;
 
     if ( is_array($param) ) {
