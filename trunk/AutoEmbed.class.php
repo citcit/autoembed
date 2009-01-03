@@ -58,15 +58,20 @@ class AutoEmbed {
   }
 
   /**
-   * Returns the website that is hosting
-   * the video
+   * Returns info about the website 
+   * hosting the video
    *
-   * @return string - host website
+   * @param string $property - (optional) the specific
+   *           property of the site to be returned.  If 
+   *           ommited, array of all properties are returned
+   *
+   * @return mixed - details about the site the embed
+   *                 link is hosted on 
    */
-  public function getHost() {
-    return $this->_site['title'];
+  public function getHost($property) {
+    return isset($property) ? $this->_site[$property] : $this->_site;
   }
-  
+
 
   /**
    * Return params about the video metadata
