@@ -94,8 +94,10 @@ class AutoEmbed {
   /**
    * Override a default param value
    *
-   * @param $param string - the name of the param to be set
-   * @param $value string - the value to set the param to
+   * @param $param mixed - the name of the param to be set
+   *                       or an array of multiple params to set
+   * @param $value string - (optional) the value to set the param to
+   *                        if only one param is being set
    *
    * @return boolean - true if the value was set, false
    *                   if parseURL hasn't been called yet
@@ -103,7 +105,15 @@ class AutoEmbed {
   public function setParam($param, $value) {
     if (!is_array($this->_params)) return false;
 
-    $this->_params[$param] = $value;
+    if ( is_array($param) ) {
+      foreach ($param as $p => $v) {
+        $this->_params[$p] = $v;
+      }
+    
+    } else {
+      $this->_params[$param] = $value;
+    }
+    
     return true;
   }
 
