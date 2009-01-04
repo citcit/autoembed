@@ -68,7 +68,7 @@ class AutoEmbed {
    * @return mixed - details about the site the embed
    *                 link is hosted on 
    */
-  public function getHost($property = '') {
+  public function getHost($property = null) {
     return isset($property) ? $this->_site[$property] : $this->_site;
   }
 
