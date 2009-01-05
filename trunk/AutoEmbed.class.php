@@ -125,6 +125,26 @@ class AutoEmbed {
   }
 
   /**
+   * Override a default param value for both the object
+   * and flash param list
+   *
+   * @param $param mixed - the name of the param to be set
+   *                       or an array of multiple params to set
+   * @param $value string - (optional) the value to set the param to
+   *                        if only one param is being set
+   *
+   * @return boolean - true if the value was set, false
+   *                   if parseURL hasn't been called yet
+   */
+  public function setParam($param, $value = null) {
+    if ( !$this->setObjectParam($param, $value) ) {
+      return false;
+    }
+
+    return $this->setFlashParam($param, $value);
+  }
+
+  /**
    * Override a default object param value
    *
    * @param $param mixed - the name of the param to be set
