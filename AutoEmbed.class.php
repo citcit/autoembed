@@ -21,7 +21,8 @@ class AutoEmbed {
   
   private $_video_id;
   private $_site;
-  private $_params;
+  private $_object_params;
+  private $_flash_params;
 
   /**
    * AutoEmbed Constructor
@@ -79,8 +80,17 @@ var_dump($match);
    *
    * @return array - video metadata
    */
-  public function getParams() {
-    return $this->_params;
+  public function getFlashParams() {
+    return $this->_flash_params;
+  }
+
+  /**
+   * Return object params about the video metadata
+   *
+   * @return array - object params
+   */
+  public function getObjectParams() {
+    return $this->_object_params;
   }
 
   /**
@@ -93,7 +103,7 @@ var_dump($match);
   }
 
   /**
-   * Override a default param value
+   * Override a default object param value
    *
    * @param $param mixed - the name of the param to be set
    *                       or an array of multiple params to set
@@ -103,18 +113,41 @@ var_dump($match);
    * @return boolean - true if the value was set, false
    *                   if parseURL hasn't been called yet
    */
-  public function setParam($param, $value = '') {
-    if (!is_array($this->_params)) return false;
+  public function setObjectParam($param, $value = null) {
+    return $this->_setParam('_object_params', $param, $value);
+  }
+
+  /**
+   * Override a default flash param value
+   *
+   * @param $param mixed - the name of the param to be set
+   *                       or an array of multiple params to set
+   * @param $value string - (optional) the value to set the param to
+   *                        if only one param is being set
+   *
+   * @return boolean - true if the value was set, false
+   *                   if parseURL hasn't been called yet
+   */
+  public function setFlashParam($param, $value = null) {
+    return $this->_setParam('_flash_params', $param, $value);
+  }
+
+
+  /**
+   * Set one of the two param arrays
+   */
+  private function _setParam($var, $param, $value = null) {
+    if (!is_array($this->$var)) return false;
 
     if ( is_array($param) ) {
       foreach ($param as $p => $v) {
-        $this->_params[$p] = $v;
+        $this->$var[$p] = $v;
       }
-    
+
     } else {
-      $this->_params[$param] = $value;
+      $this->$var[$param] = $value;
     }
-    
+
     return true;
   }
 
@@ -125,26 +158,20 @@ var_dump($match);
     $object_html = '<object classid="CLSID:D27CDB6E-AE6D-11CF-96B8-444553540000" ' .
                    '        codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,115,0" ' .
                    '        type="application/x-shockwave-flash" ' . 
-                   '        width="' . $this->_params['width'] . '"' .
-                   '        height="' . $this->_params['height'] . '">';
+                   '        width="' . $this->_flash_params['width'] . '"' .
+                   '        height="' . $this->_flash_params['height'] . '">';
 
-    $param_html = '<param name="movie" value="' . $this->_params['src'] . '" />';
-    
-    $embed_html = '<embed type="application/x-shockwave-flash" ' .
-                  '        src="' . $this->_params['src'] . '"' . 
-                  '        width="' . $this->_params['width'] . '"' .
-                  '        height="' . $this->_params['height'] . '"';
-
-    foreach ($this->_params as $param => $value) {
-      if ($param == 'src' || $param == 'height' || $param == 'width') continue;
-      
-      $param_html .= '<param name="' . $param . '" value="' . $value . '" />';
-      $embed_html .= '  ' . $param . '="' . $value . '"';
+    foreach ($this->_object_params as $param => $value) {
+      $object_html .= '<param name="' . $param . '" value="' . $value . '" />';
     }
-    
-    $embed_html .= ' />';
-    
-    return $object_html . $param_html . $embed_html . '</object>';
+
+    $object_html .= '<embed ';
+
+    foreach ($this->_flash_params as $param => $value) {
+      $object_html .= '  ' . $param . '="' . $value . '"';    
+    }
+
+    return $object_html .= ' /></object>';
   }
 
   
@@ -157,8 +184,12 @@ var_dump($match);
     for ($i=1; $i<=count($this->_video_id); $i++) {
       $source = str_ireplace('$'.$i, $this->_video_id[$i - 1], $this->_site['embed-movie']);
     }
-    
-    $this->_params = array(
+
+    $this->_flash_params = array(
+            'type' => 'application/x-shockwave-flash',
+            'src' => $source,
+            'width' => $this->_site['embed-width'] . 'px',
+            'height' => $this->_site['embed-height'] . 'px',
             'wmode' => 'transparent',
             'quality' => 'high',
             'allowFullScreen' => 'true',
@@ -166,10 +197,18 @@ var_dump($match);
             'pluginspage' => 'http://www.macromedia.com/go/getflashplayer',
             'autoplay' => 'false',
             'autostart' => 'false',
-            'width' => $this->_site['embed-width'] . 'px',
-            'height' => $this->_site['embed-height'] . 'px',
-            'src' => $source,
            );   
+
+    $this->_object_params = array(
+            'movie' => $source,
+            'wmode' => 'transparent',
+            'quality' => 'high',
+            'allowFullScreen' => 'true',
+            'allowScriptAccess' => 'never',
+            'pluginspage' => 'http://www.macromedia.com/go/getflashplayer',
+            'autoplay' => 'false',
+            'autostart' => 'false',
+           );
   }
 
 }

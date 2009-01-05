@@ -37,9 +37,11 @@ $ae = new AutoEmbed();
   <?
   if ($ae->parseUrl(base64_decode($_GET['url']))) {
     // Construct HTML tag for embedding the video
+    $ae->setFlashParam('width', '100px');
     $embed_tag = $ae->getEmbedCode();
     // Extract the video's media params  (movie url, width, height, media type, etc)
-    $params = $ae->getParams();
+    $fparams = $ae->getFlashParams();
+    $oparams = $ae->getObjectParams();
     ?>
     <table border="0" width="100%">
       <tr>
@@ -53,8 +55,10 @@ $ae = new AutoEmbed();
         <td valign="top" style="padding-left:10px">
           <h4>Embed Code</h4>
           <textarea><?=htmlspecialchars($embed_tag)?></textarea>
-          <h4>Params</h4>
-          <pre><?var_dump($params)?></pre>
+          <h4>Flash Params</h4>
+          <pre><?var_dump($fparams)?></pre>
+          <h4>Object Params</h4>
+          <pre><?var_dump($oparams)?></pre>
         </td>
       </tr>
     </table>
