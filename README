@@ -11,7 +11,7 @@ AutoEmbed is a PHP class that parses media information from a given URL.
 Project page: http://code.google.com/p/autoembed/
 
 Synopsis:
---------
+---------
 
 $ae = new AutoEmbed();
 
@@ -20,8 +20,11 @@ if (!$ae->parseURL('http://www.youtube.com/watch?v=z3U0udLH974')) {
 	// No video found or site is not supported
 }
 
-// Extract the video's media params
-$params = $ae->getParams();
+// Extract the media's object params
+$object_params = $ae->getObjectParams();
+
+// Extract the media's flash params
+$flash_params = $ae->getFlashParams();
 
 // Construct HTML tag for embedding the video
 $embed_tag = $ae->getEmbedCode();
