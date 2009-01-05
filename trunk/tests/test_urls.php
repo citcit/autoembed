@@ -38,7 +38,7 @@ $test_urls = array(
    'ABC News' => 'http://abcnews.go.com/video/playerIndex?id=6572739',
    'AdultSwim' => 'http://www.adultswim.com/video/?episodeID=8a2505951bc80ed4011c2e6c015b0421',
    'AniBoom' => 'http://www.aniboom.com/video/270647/Monday-Morning/?ref=/homepage/video/',
-   'AOL Uncut' => 'http://uncutvideo.aol.com/videos/a77d99afdf3472f5f18381329c14c9f',
+   'AOL Video' => 'http://video.aol.com/partner/vh1/real-chance-of-love-toughest-elimination-yet/mgid:cms:mvideo:vh1.com:100867',
    'Archive.org' => 'http://www.archive.org/download/Sita04_BattleofLanka/Sita04_BattleofLanka_sorensen.flv',
    'Atom' => 'http://www.atom.com/funny_videos/mccaingels_103/',
    'Bebo' => 'http://bebo.161.download.videoegg.com/gid329/cid1124/LC/D8/1211993690XyKXuBnaZtd9ZRftvoVo',
