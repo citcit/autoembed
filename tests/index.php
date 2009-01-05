@@ -45,7 +45,7 @@ $ae = new AutoEmbed();
       <tr>
         <td colspan="2" style="padding-bottom:10px;">
           <h2><?=$ae->getHost('title')?></h2>
-          <p><b>Test URL &rarr;</b> <a href="<?=$_GET['url']?>" target="_new"><?=$_GET['url']?></a></p>
+          <p><b>Test URL &rarr;</b> <a href="<?=base64_decode($_GET['url'])?>" target="_new"><?=base64_decode($_GET['url'])?></a></p>
         </td>
       </tr>
       <tr>
@@ -59,7 +59,7 @@ $ae = new AutoEmbed();
       </tr>
     </table>
   <? } else { ?>
-    <h3>Could not obtain video metadata for URL: <a href="<?=$_GET['url']?>" target="_new"><?=$_GET['url']?></a></h3>
+    <h3>Could not obtain video metadata for URL: <a href="<?=base64_decode($_GET['url'])?>" target="_new"><?=base64_decode($_GET['url'])?></a></h3>
   <? } ?>
   </div>
 <? } ?>
