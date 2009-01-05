@@ -35,7 +35,7 @@ $test_urls = array(
    '123video' => 'http://www.123video.nl/playvideos.asp?MovieID=67244',
    '5min Life Videopedia' => 'http://www.5min.com/Video/Quick-Tip-Knife-Technique-30438039',
    '9You' => 'http://v.9you.com/watch/xuzegfifj.html',
-   'ABC News' => 'http://video-cdn.abcnews.com/080911_wn_palin1_noslate.flv',
+   'ABC News' => 'http://abcnews.go.com/video/playerIndex?id=6572739',
    'AdultSwim' => 'http://www.adultswim.com/video/?episodeID=8a2505951bc80ed4011c2e6c015b0421',
    'AniBoom' => 'http://www.aniboom.com/video/270647/Monday-Morning/?ref=/homepage/video/',
    'AOL Uncut' => 'http://uncutvideo.aol.com/videos/a77d99afdf3472f5f18381329c14c9f',
