@@ -47,7 +47,6 @@ class AutoEmbed {
 
     foreach ($sites as $site) { 
       if ( preg_match('~'.$site['embed-pattern'].'~imu', $url, $match) ) {
-var_dump($match);
         $this->_video_id = $match;
         $this->_site = $site;
         $this->_setDefaultParams($url);
@@ -73,7 +72,6 @@ var_dump($match);
   public function getHost($property = null) {
     return isset($property) ? $this->_site[$property] : $this->_site;
   }
-
 
   /**
    * Return params about the video metadata
@@ -103,6 +101,36 @@ var_dump($match);
   }
 
   /**
+   * Set the height of the object
+   * 
+   * @param mixed - height to set the object to
+   *
+   * @return boolean - true if the value was set, false
+   *                   if parseURL hasn't been called yet
+   */
+  public function setHeight($height) {
+    if ( is_numeric($height) ) {
+      $height .= 'px';
+    }
+    return $this->setFlashParam('height', $height);
+  }
+
+  /**
+   * Set the width of the object
+   * 
+   * @param mixed - width to set the object to
+   *
+   * @return boolean - true if the value was set, false
+   *                   if parseURL hasn't been called yet
+   */
+  public function setWidth($width) {
+    if ( is_numeric($width) ) {
+      $width .= 'px';
+    }
+    return $this->setFlashParam('width', $width);
+  }
+
+  /**
    * Override a default object param value
    *
    * @param $param mixed - the name of the param to be set
@@ -114,7 +142,18 @@ var_dump($match);
    *                   if parseURL hasn't been called yet
    */
   public function setObjectParam($param, $value = null) {
-    return $this->_setParam('_object_params', $param, $value);
+    if (!is_array($this->_object_params)) return false;
+
+    if ( is_array($param) ) {
+      foreach ($param as $p => $v) {
+        $this->_object_params[$p] = $v;
+      }
+
+    } else {
+      $this->_object_params[$param] = $value;
+    }
+
+    return true;
   }
 
   /**
@@ -129,23 +168,15 @@ var_dump($match);
    *                   if parseURL hasn't been called yet
    */
   public function setFlashParam($param, $value = null) {
-    return $this->_setParam('_flash_params', $param, $value);
-  }
-
-
-  /**
-   * Set one of the two param arrays
-   */
-  private function _setParam($var, $param, $value = null) {
-    if (!is_array($this->$var)) return false;
+    if (!is_array($this->_flash_params)) return false;
 
     if ( is_array($param) ) {
       foreach ($param as $p => $v) {
-        $this->$var[$p] = $v;
+        $this->_flash_params[$p] = $v;
       }
 
     } else {
-      $this->$var[$param] = $value;
+      $this->_flash_params[$param] = $value;
     }
 
     return true;
