@@ -236,15 +236,16 @@ $sites = array(
 	),
 	array(
 		'id' => 'aol',
-		'title' => 'AOL Uncut',
-		'website' => 'http://uncutvideo.aol.com',
+		'title' => 'AOL Video',
+		'website' => 'http://video.aol.com',
 		'type' => 'video',
 		'plugin' => 'flash',
-		'embed-pattern' => '(http://uncutvideo(?:\.latino)?\.aol\.(?:com|es|it|de|co\.uk|nl|fr|ca|ie|se|pl))/videos/([0-9a-f]{30,33})',
-		'embed-movie' => 'http://uncutvideo.aol.com/v7.310/en-US/uc_videoplayer.swf?aID=$3&site=$2/',
+		'embed-pattern' => 'http://video\.aol\.com/partner/([a-z0-9-_]+)/([a-z0-9-_]+)/([a-z0-9:\.]+)',
+		'embed-movie' => 'http://media.mtvnservices.com/$4',
 		'embed-width' => '415',
 		'embed-height' => '347',
 	),
+
 	array(
 		'id' => 'arc',
 		'title' => 'Archive.org',
