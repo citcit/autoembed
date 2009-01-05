@@ -109,9 +109,6 @@ class AutoEmbed {
    *                   if parseURL hasn't been called yet
    */
   public function setHeight($height) {
-    if ( is_numeric($height) ) {
-      $height .= 'px';
-    }
     return $this->setFlashParam('height', $height);
   }
 
@@ -124,9 +121,6 @@ class AutoEmbed {
    *                   if parseURL hasn't been called yet
    */
   public function setWidth($width) {
-    if ( is_numeric($width) ) {
-      $width .= 'px';
-    }
     return $this->setFlashParam('width', $width);
   }
 
@@ -219,8 +213,8 @@ class AutoEmbed {
     $this->_flash_params = array(
             'type' => 'application/x-shockwave-flash',
             'src' => $source,
-            'width' => $this->_site['embed-width'] . 'px',
-            'height' => $this->_site['embed-height'] . 'px',
+            'width' => $this->_site['embed-width'],
+            'height' => $this->_site['embed-height'],
             'wmode' => 'transparent',
             'quality' => 'high',
             'allowFullScreen' => 'true',
