@@ -140,11 +140,11 @@ class AutoEmbed {
 
     if ( is_array($param) ) {
       foreach ($param as $p => $v) {
-        $this->_object_params[$p] = $v;
+        $this->_object_params[$p] = (string) $v;
       }
 
     } else {
-      $this->_object_params[$param] = $value;
+      $this->_object_params[$param] = (string) $value;
     }
 
     return true;
@@ -166,11 +166,11 @@ class AutoEmbed {
 
     if ( is_array($param) ) {
       foreach ($param as $p => $v) {
-        $this->_flash_params[$p] = $v;
+        $this->_flash_params[$p] = (string) $v;
       }
 
     } else {
-      $this->_flash_params[$param] = $value;
+      $this->_flash_params[$param] = (string) $value;
     }
 
     return true;
