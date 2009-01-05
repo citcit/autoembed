@@ -125,7 +125,7 @@ $test_urls = array(
    'Kewego' => 'http://www.kewego.co.uk/video/iLyROoafY7tD.html',
    'Koreus' => 'http://www.koreus.com/video/tortue-usb.html',
    'Last.fm (Audio)' => 'http://www.last.fm/music/The+Kooks/_/Naive?autostart',
-   'Last.fm (Videos)' => 'http://www.last.fm/music/The+Kooks/+videos/2811837',
+   'Last.fm (Videos)' => 'http://www.last.fm/music/Blink-182/+videos/12008147',
    'Libero' => 'http://video.libero.it/app/play?id=daed2f29e33f1ff16c91428f22f1477e',
    'LiveLeak' => 'http://www.liveleak.com/view?i=fa4_1172336556',
    'LiveVideo' => 'http://www.livevideo.com/video/001AB3E1FB2440C9831782D78070503E/numa-numa-music-video.aspx',
