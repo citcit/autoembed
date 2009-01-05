@@ -19,7 +19,7 @@
 
 class AutoEmbed {
   
-  private $_video_id;
+  private $_media_id;
   private $_site;
   private $_object_params;
   private $_flash_params;
@@ -47,7 +47,7 @@ class AutoEmbed {
 
     foreach ($sites as $site) { 
       if ( preg_match('~'.$site['embed-pattern'].'~imu', $url, $match) ) {
-        $this->_video_id = $match;
+        $this->_media_id = $match;
         $this->_site = $site;
         $this->_setDefaultParams($url);
         return true;
@@ -160,11 +160,11 @@ class AutoEmbed {
 
     if ( is_array($param) ) {
       foreach ($param as $p => $v) {
-        $this->_object_params[$p] = (string) $v;
+        $this->_object_params[$p] = $v;
       }
 
     } else {
-      $this->_object_params[$param] = (string) $value;
+      $this->_object_params[$param] = $value;
     }
 
     return true;
@@ -186,11 +186,11 @@ class AutoEmbed {
 
     if ( is_array($param) ) {
       foreach ($param as $p => $v) {
-        $this->_flash_params[$p] = (string) $v;
+        $this->_flash_params[$p] = $v;
       }
 
     } else {
-      $this->_flash_params[$param] = (string) $value;
+      $this->_flash_params[$param] = $value;
     }
 
     return true;
@@ -226,8 +226,8 @@ class AutoEmbed {
    */
   private function _setDefaultParams() {
 
-    for ($i=1; $i<=count($this->_video_id); $i++) {
-      $source = str_ireplace('$'.$i, $this->_video_id[$i - 1], $this->_site['embed-movie']);
+    for ($i=1; $i<=count($this->_media_id); $i++) {
+      $source = str_ireplace('$'.$i, $this->_media_id[$i - 1], $this->_site['embed-movie']);
     }
 
     $this->_flash_params = array(
