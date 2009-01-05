@@ -46,6 +46,7 @@ class AutoEmbed {
 
     foreach ($sites as $site) { 
       if ( preg_match('~'.$site['embed-pattern'].'~imu', $url, $match) ) {
+var_dump($match);
         $this->_video_id = $match;
         $this->_site = $site;
         $this->_setDefaultParams($url);
