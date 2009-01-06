@@ -36,7 +36,7 @@ include "../includes/header.inc.php";
       <?=$embed_code?>
       <br /><br />
       <h4>Embed Code</h4>
-      <input type="text" size="80%" value="<?=htmlspecialchars($embed_code)?>" />
+      <input type="text" size="80%" value="<?=htmlspecialchars($embed_code)?>" onClick="this.select();" />
     </div>
   <? } ?>
 <? } ?>
