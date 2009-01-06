@@ -10,10 +10,10 @@ include "../../AutoEmbed.class.php";
 $ae = new AutoEmbed();
 ?>
 
-<h2>AutoEmbed Live Demonstration Suite</h2>
+<h2>AutoEmbed Live Demos</h2>
 <p>Select a site preset to test.  Each site preset consists of a single URL,
 which points to a video located within that site.</p>
-<p><em>Note that this list is a comprehensive set of sites that AutoEmbed supports.  This list is not complete
+<p><em><b>Note:</b> This list is a comprehensive set of sites that AutoEmbed supports.  This list is not complete
 and will likely change often as we support more video sites in the future.</em></p>
 </div>
 </div>
