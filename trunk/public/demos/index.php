@@ -16,8 +16,8 @@ which points to a video located within that site.</p>
 <p><em><b>Note:</b> This list is a comprehensive set of sites that AutoEmbed supports.  This list is not complete
 and will likely change often as we add more sites to this list in the future.</em></p>
 
-<p>To suggest a new site to be added to this list, please direct feature
-requests to the <a href="http://groups.google.com/group/autoembed/">AutoEmbed Project</a> page.</p>
+<p>To suggest a new site to be added to this list or to report an issue found in this demonstration, please 
+direct inquires to the <a href="http://groups.google.com/group/autoembed/">AutoEmbed Project</a> page.</p>
 
 </div>
 </div>
