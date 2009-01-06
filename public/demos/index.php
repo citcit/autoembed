@@ -14,7 +14,11 @@ $ae = new AutoEmbed();
 <p>Select a site preset to test.  Each site preset consists of a single URL,
 which points to a video located within that site.</p>
 <p><em><b>Note:</b> This list is a comprehensive set of sites that AutoEmbed supports.  This list is not complete
-and will likely change often as we support more video sites in the future.</em></p>
+and will likely change often as we add more sites to this list in the future.</em></p>
+
+<p>To suggest a new site to be added to this list, please direct feature
+requests to the <a href="http://groups.google.com/group/autoembed/">AutoEmbed Project</a> page.</p>
+
 </div>
 </div>
 
