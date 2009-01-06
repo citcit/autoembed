@@ -226,7 +226,7 @@ class AutoEmbed {
    */
   private function _setDefaultParams() {
     
-    $flashvars = isset($this->_site['flashvars']) ? $this->_site['flashvars'] : '""';
+    $flashvars = $this->_site['flashvars'];
     $source = $this->_site['embed-movie'];
 
     for ($i=1; $i<=count($this->_media_id); $i++) {
