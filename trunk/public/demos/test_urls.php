@@ -162,7 +162,7 @@ $test_urls = array(
    'Putfile' => 'http://media.putfile.com/Motorcycle-jump?pos=home',
    'Rambler' => 'http://vision.rambler.ru/users/forum-bumerang/1/119/',
    'RawVegas' => 'http://www.rawvegas.tv/watch.php?vID=449f9394c456a4fb3f3b30de5c6bfd',
-   'ScreenToaster' => 'http://www.screentoaster.com/watch/stV0pWS0VLRllbQV1ZXFlf',
+   'ScreenToaster' => 'http://www.screentoaster.com/watch/stU0tXQEFLTV5eQ1lV',
    'Seeqpod' => 'http://www.seeqpod.net/search/?plid=3e10a35644',
    'SevenLoad' => 'http://en.sevenload.com/videos/GIaE01F-Classic-Television-Commercials-Part-I',
    'ShareView' => 'http://www.shareview.us/view/344/best-of-family-guy-really-funny/',
