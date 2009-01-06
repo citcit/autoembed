@@ -18,7 +18,7 @@ include "../includes/header.inc.php";
 
 <div class="box" style="padding-bottom:0;">
   <h4><label for="url">Enter a URL to Auto-Embedify</label></h4>
-  <form methpd="GET" action="<?=BASE_URL?>/api/">
+  <form methpd="post" action="<?=BASE_URL?>/api/">
     <input type="text" id="url" size="60" name="url" value="<?=$_GET['url']?>" class="text" onClick="this.select();" />
     <input type="submit" value="Get Embed Code" class="button" /><br />
     <b>Format:</b>
