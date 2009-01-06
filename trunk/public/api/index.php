@@ -32,7 +32,7 @@ include "../includes/header.inc.php";
     <p>Sorry, the URL you entered is not supported by this version of AutoEmbed.</p>
   <? } else { ?>
     <div class="result box">
-      <h4>Example from <em><?=$AE->getHost('title')?></em></h4>
+      <h4>Example from <em><?=$AE->getStub('title')?></em></h4>
       <?=$embed_code?>
       <br /><br />
       <h4>Embed Code</h4>
