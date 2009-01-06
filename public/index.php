@@ -2,7 +2,7 @@
 include "includes/header.inc.php";
 ?>
 
-<h2>AutoEmbed Generates Embeddedable Audio/Video HTML</h2>
+<h2>AutoEmbed Generates Embeddable Audio/Video HTML</h2>
 
 <p><em>AutoEmbed</em> is a utility and service that generates
 <a target="_new" href="http://www.w3schools.com/flash/flash_inhtml.asp">HTML embed tags</a> 
