@@ -19,8 +19,8 @@ and will likely change often as we support more video sites in the future.</em><
 </div>
 
 <div id="wide-area">
-
   <div id="demo-list">
+    <h3>Select a site:</h3><br />
     <ul>
       <? foreach ($test_urls as $site=>$url) { ?>
         <li class="<?=(base64_encode($url)==$_GET['url']?'current':'')?>"><a href="?url=<?=base64_encode($url)?>#demo-area" title="Test: <?=$url?>"><?=$site?></a></li>
@@ -58,6 +58,7 @@ and will likely change often as we support more video sites in the future.</em><
       <h2 style="margin:0;">Test Results</h2>
       <p>Error: Could not obtain video metadata for URL: <a href="<?=base64_decode($_GET['url'])?>" target="_new"><?=base64_decode($_GET['url'])?></a></h3>
     <? } ?>
+      <p style="text-align:center;margin-top:10px;"><a href="#demo-list">Back up to List</a></p>
     </div>
   <? } ?>
 </div>
