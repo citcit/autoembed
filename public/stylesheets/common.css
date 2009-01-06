@@ -18,10 +18,11 @@ h2,h3,h4 {color:#333333;margin-bottom:0;}
 p {margin-top:0;color:#666;line-height:1.4em;}
 pre {background:#333333;color:#ffffff;font-size:14px;padding:10px;margin-top:0;margin-bottom:15px;}
 
-#wide-area {background:#f1f1f1;padding-top:10px;padding-bottom:50px;border-top:2px solid #ccc;}
+#wide-area {background:#f1f1f1;padding-top:10px;padding-bottom:50px;border-top:1px solid #ccc;}
 #demo-list {width:90%;margin:0 auto;font-size:13px;}
 #demo-list ul {margin:0;padding:0;list-style:none;}
-#demo-list li {float:left;width:200px;margin-right:2px;border-bottom:1px dotted #ddd;border-left:1px solid #ddd;}
-#demo-list li a {display:block;padding:1px;}
+#demo-list li {float:left;width:200px;margin-right:2px;border-bottom:1px dotted #ddd;}
+#demo-list li a {display:block;padding:2px;}
+#demo-list li a:hover {background:#fff;}
 #demo-list li.current a {background:#A53A3A;color:#fff;text-decoration:none;}
-#demo-area {width:90%;margin:0 auto;background:#fff;padding:20px;margin-top:15px;border:1px solid #ccc;}
+#demo-area {width:90%;margin:0 auto;background:#fff;padding:20px;margin-top:50px;border:1px solid #ccc;}
