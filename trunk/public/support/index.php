@@ -1,12 +1,9 @@
 <?php
-$docs_current = "current";
+$support_current = "current";
 include "../includes/header.inc.php";
 ?>
 
-<h2>Class API Documentation</h2>
-<p>Also coming soon.</p>
-
-<h3>Get Support</h3>
+<h2>Get Support</h2>
 <p>Support for this project is available.</p>
 
 <ul>
