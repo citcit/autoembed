@@ -53,7 +53,9 @@ include "../includes/header.inc.php";
 
 <br />
 <h4>Terms of Use</h4>
-<p style="font-size:11px;">AutoEmbed was created as a free service to make posting embedded videos easier, 
+<p style="font-size:11px;line-height:1.2em;">
+<img src="<?=BASE_URL?>/images/icon.png" align="left" style="margin-right:5px;margin-bottom:10px;" />
+AutoEmbed was created as a free service to make posting embedded videos easier, 
 and may only be used for legitimate video site URLs. Using it for spamming or illegal purposes is 
 forbidden and any such use will result in the reporting of this abuse to your ISP's authorities.
 (Your recorded IP address is <?=$_SERVER['REMOTE_ADDR']?>).  This service is provided without 
