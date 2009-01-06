@@ -36,7 +36,7 @@
 		'embed-height' =>			Height of the embedded object	(don't specify any units, as px is specified later)					(Mandatory)
 	),
 */
-$sites = array(
+$stubs = array(
 	array(
 		'id' => 'ytb',
 		'title' => 'YouTube',

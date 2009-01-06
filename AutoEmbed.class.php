@@ -20,7 +20,7 @@
 class AutoEmbed {
   
   private $_media_id;
-  private $_site;
+  private $_stub;
   private $_object_params;
   private $_flash_params;
 
@@ -30,7 +30,7 @@ class AutoEmbed {
    * @return object - AutoEmbed object
    */
   public function __construct() {
-    global $sites;
+    global $stubs;
 
     include_once 'sites.php';
   }
@@ -43,34 +43,32 @@ class AutoEmbed {
    * @return boolean - whether or not the url contains valid/supported video
    */
   public function parseUrl($url) {
-    global $sites;
+    global $stubs;
 
-    foreach ($sites as $site) { 
-      if ( preg_match('~'.$site['embed-pattern'].'~imu', $url, $match) ) {
+    foreach ($stubs as $stub) { 
+      if ( preg_match('~'.$stub['embed-pattern'].'~imu', $url, $match) ) {
         $this->_media_id = $match;
-        $this->_site = $site;
+        $this->_stub = $stub;
         $this->_setDefaultParams($url);
         return true;
       }
     }
 
-    unset($site);
+    unset($stub);
     return false;
   }
 
   /**
-   * Returns info about the website 
-   * hosting the video
+   * Returns info about the stub
    *
    * @param string $property - (optional) the specific
-   *           property of the site to be returned.  If 
+   *           property of the stub to be returned.  If 
    *           ommited, array of all properties are returned
    *
-   * @return mixed - details about the site the embed
-   *                 link is hosted on 
+   * @return mixed - details about the stub 
    */
-  public function getHost($property = null) {
-    return isset($property) ? $this->_site[$property] : $this->_site;
+  public function getStub($property = null) {
+    return isset($property) ? $this->_stub[$property] : $this->_stub;
   }
 
   /**
@@ -222,12 +220,12 @@ class AutoEmbed {
   
   /**
    * Set the default params for the type of
-   * site we are working with
+   * stub we are working with
    */
   private function _setDefaultParams() {
     
-    $flashvars = $this->_site['flashvars'];
-    $source = $this->_site['embed-movie'];
+    $flashvars = $this->_stub['flashvars'];
+    $source = $this->_stub['embed-movie'];
 
     for ($i=1; $i<=count($this->_media_id); $i++) {
       $source = str_ireplace('$'.$i, $this->_media_id[$i - 1], $source);
@@ -237,8 +235,8 @@ class AutoEmbed {
     $this->_flash_params = array(
             'type' => 'application/x-shockwave-flash',
             'src' => $source,
-            'width' => $this->_site['embed-width'],
-            'height' => $this->_site['embed-height'],
+            'width' => $this->_stub['embed-width'],
+            'height' => $this->_stub['embed-height'],
             'wmode' => 'transparent',
             'quality' => 'high',
             'allowFullScreen' => 'true',

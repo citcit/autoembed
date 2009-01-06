@@ -43,7 +43,7 @@ direct inquires to the <a href="http://groups.google.com/group/autoembed/">AutoE
       $flash_params = $ae->getFlashParams();
       $object_params = $ae->getObjectParams();
       ?>
-      <h2 style="margin:0;">Test Results for Site: <em><?=$ae->getHost('title')?></em></h2>
+      <h2 style="margin:0;">Test Results for Site: <em><?=$ae->getStub('title')?></em></h2>
       <p><b>Testing URL &rarr;</b> <a href="<?=base64_decode($_GET['url'])?>" target="_new"><?=base64_decode($_GET['url'])?></a></p>
 
       <h4>Embedded Media</h4>
