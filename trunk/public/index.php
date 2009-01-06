@@ -6,7 +6,7 @@ include "includes/header.inc.php";
 
 <p><em>AutoEmbed</em> is a utility and service that generates
 <a target="_new" href="http://www.w3schools.com/flash/flash_inhtml.asp">HTML embed tags</a> 
-for a given URL.  It also provides the means to optionally manipulate the 
+for audio or video located on a given URL.  It also provides the means to optionally manipulate the 
 retrieved media information by setting parameters, and finally returning 
 a reconstructed HTML snippet for presenting <a target="_new" href="http://www.adobe.com/flashplatform/">Flash video</a>
 on a website.</p>
