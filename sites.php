@@ -1047,9 +1047,10 @@ $sites = array(
 		'website' => 'http://www.last.fm',
 		'type' => 'audio',
 	  'embed-pattern' => 'http://(?:www\.)?last\.fm/music/([0-9a-z\+_-]*?)/_/([0-9\+a-z_-]*)',
-		'embed-movie' => 'http://cdn.last.fm/webclient/s12n/102/lfmPlayer.swf?lang=en&lfmMode=playlist&resname=$3&restype=track&artist=$2&autostart=false',
+		'embed-movie' => 'http://cdn.last.fm/webclient/s12n/s/5/lfmPlayer.swf',
 		'embed-width' => '340',
 		'embed-height' => '289',
+    'flashvars' => 'lang=en&amp;lfmMode=playlist&amp;FOD=true&amp;resname=$3&amp;restype=track&amp;artist=$2',
 	),
 	array(
 		'id' => 'lav',

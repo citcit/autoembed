@@ -225,11 +225,15 @@ class AutoEmbed {
    * site we are working with
    */
   private function _setDefaultParams() {
+    
+    $flashvars = isset($this->_site['flashvars']) ? $this->_site['flashvars'] : '""';
+    $source = $this->_site['embed-movie'];
 
     for ($i=1; $i<=count($this->_media_id); $i++) {
-      $source = str_ireplace('$'.$i, $this->_media_id[$i - 1], $this->_site['embed-movie']);
+      $source = str_ireplace('$'.$i, $this->_media_id[$i - 1], $source);
+      $flashvars = str_ireplace('$'.$i, $this->_media_id[$i - 1], $flashvars);
     }
-
+print_r($this->_media_id);
     $this->_flash_params = array(
             'type' => 'application/x-shockwave-flash',
             'src' => $source,
@@ -242,6 +246,7 @@ class AutoEmbed {
             'pluginspage' => 'http://www.macromedia.com/go/getflashplayer',
             'autoplay' => 'false',
             'autostart' => 'false',
+            'flashvars' => $flashvars,
            );   
 
     $this->_object_params = array(
