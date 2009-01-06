@@ -20,7 +20,7 @@ on a website.</p>
 </ul>
 
 <p><b>Some programming is required.</b> <em>AutoEmbed</em> is available as a 
-<a href="api/">web service</a> for performing <em>URL to Embedded Video</em> conversions, 
+<a href="api/">web service</a> for performing <em>URL to Embedded Video HTML</em> conversions, 
 and is available for <a href="download/">download</a> as a PHP class, licensed
 under the LGPL.</p>
 
