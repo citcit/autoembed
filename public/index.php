@@ -3,17 +3,17 @@ $intro_current = "current";
 include "includes/header.inc.php";
 ?>
 
-<h2>Introduction to AutoEmbed</h2>
+<h2>AutoEmbed, finally a url-to-embed function!</h2>
 
-<p><em>AutoEmbed</em> is a utility and service for developers to generate
+<p><em>AutoEmbed</em> is a utility and service that generates
 <a target="_new" href="http://www.w3schools.com/flash/flash_inhtml.asp">HTML embed tags</a> 
-from a given URL.  It also provides the means to optionally manipulate the 
+for a given URL.  It also provides the means to optionally manipulate the 
 retrieved media information by setting parameters, and finally returning 
 a reconstructed HTML snippet for presenting <a target="_new" href="http://www.adobe.com/flashplatform/">Flash Video</a>
 on a website.</p>
 
 <p><b>Some programming is required.</b> <em>AutoEmbed</em> is available as a 
-<a href="api/">web service</a> for performing <b>URL to Embed</b> conversions, 
+<a href="api/">web service</a> for performing <em>URL to Embedded Video</em> conversions, 
 as well as a <a href="download/">downloadable PHP class</a>.</p>
 
 <h2>Quick Synopsis</h2>
@@ -43,6 +43,10 @@ echo $AE->getEmbedCode();
 // And do it again with a different URL.
 $AR->parseUrl('http://videoplace.net/newvideo');
 </pre>
+
+
+<p>To examine the output returned by these methods, check out the
+<a href="<?=BASE_URL?>/demos/">demonstrations</a> for yourself.</p>
 
 <?
 include "includes/footer.inc.php";
