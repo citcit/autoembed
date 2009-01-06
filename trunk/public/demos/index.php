@@ -24,7 +24,7 @@ requests to the <a href="http://groups.google.com/group/autoembed/">AutoEmbed Pr
 
 <div id="wide-area">
   <div id="demo-list">
-    <h3>Select a site:</h3><br />
+    <h3>Select a site:</h3>
     <ul>
       <? foreach ($test_urls as $site=>$url) { ?>
         <li class="<?=(base64_encode($url)==$_GET['url']?'current':'')?>"><a href="?url=<?=base64_encode($url)?>#demo-area" title="Test: <?=$url?>"><?=$site?></a></li>
@@ -34,7 +34,7 @@ requests to the <a href="http://groups.google.com/group/autoembed/">AutoEmbed Pr
   </div>
 
   <? if (!empty($_GET['url'])) { ?>
-    <div id="demo-area">
+    <div id="demo-area" class="result box">
     <?
     if ($ae->parseUrl(base64_decode($_GET['url']))) {
       // Construct HTML tag for embedding the video
@@ -57,6 +57,7 @@ requests to the <a href="http://groups.google.com/group/autoembed/">AutoEmbed Pr
       
       <h4>Object Params</h4>
       <pre><?var_dump($object_params)?></pre>
+
       <h1 style="text-align:center;">Thanks <em>AutoEmbed</em>, you're awesome!</h1>
     <? } else { ?>
       <h2 style="margin:0;">Test Results</h2>
