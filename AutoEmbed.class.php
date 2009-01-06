@@ -233,7 +233,7 @@ class AutoEmbed {
       $source = str_ireplace('$'.$i, $this->_media_id[$i - 1], $source);
       $flashvars = str_ireplace('$'.$i, $this->_media_id[$i - 1], $flashvars);
     }
-print_r($this->_media_id);
+
     $this->_flash_params = array(
             'type' => 'application/x-shockwave-flash',
             'src' => $source,
