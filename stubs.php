@@ -1414,6 +1414,17 @@ $stubs = array(
 		'embed-width' => '470',
 		'embed-height' => '353',
 	),
+  array(
+    'id' => 'sct',
+    'title' => 'ScreenToaster',
+    'website' => 'http://www.screentoaster.com',
+    'type' => 'video',
+    'embed-pattern' => 'http://(?:www\.)?screentoaster\.com/watch/([0-9a-zA-Z]+)',
+    'embed-movie' => 'http://www.screentoaster.com/swf/STPlayer.swf?video=$2',
+    'embed-width' => '425',
+    'embed-height' => '344',
+    'flashvars' => 'video=$2',
+  ),
 	array(
 		'id' => 'see',
 		'title' => 'Seeqpod',
