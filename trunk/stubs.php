@@ -113,7 +113,6 @@ $AutoEmbed_stubs = array(
     'embed-height' => '392',
   ),
   array(
-    'id' => 'vimeo',
     'title' => 'Vimeo',
     'website' => 'http://www.vimeo.com',
     'url-match' => 'http://(?:www\.)?vimeo\.com/([0-9]{1,12})',
@@ -122,7 +121,6 @@ $AutoEmbed_stubs = array(
     'embed-height' => '302',
   ),
   array(
-    'id' => '123',
     'title' => '123video',
     'website' => 'http://www.123video.nl',
     'url-match' => 'http://(?:www\.)?123video\.nl/(?:playvideos\.asp\?(?:[^"]*?)?MovieID=|123video_share\.swf\?mediaSrc=)([0-9]{1,8})',
@@ -131,7 +129,6 @@ $AutoEmbed_stubs = array(
     'embed-height' => '339',
   ),
   array(
-    'id' => '5mi',
     'title' => '5min Life Videopedia',
     'website' => 'http://www.5min.com',
     'url-match' => 'http://(?:www\.)?5min\.com/(?:Embeded/|Video/(?:[0-9a-z_-]*?)?-)([0-9]{8})',
@@ -140,7 +137,6 @@ $AutoEmbed_stubs = array(
     'embed-height' => '355',
   ),
   array(
-    'id' => '9yo',
     'title' => '9You',
     'website' => 'http://www.9You.com',
     'url-match' => 'http://(?:www\.|v\.)?9you\.com/(?:player|watch)/([0-9a-z]{9})',
@@ -524,7 +520,6 @@ $AutoEmbed_stubs = array(
     'embed-height' => '388',
   ),
   array(
-    'id' => 'g4t',
     'title' => 'G4TV',
     'website' => 'http://www.g4tv.com',
     'url-match' => 'http://(?:www\.)?g4tv\.com/(?:xplay/videos/|lv3/|sv3/)([0-9]{1,10})',
@@ -787,7 +782,6 @@ $AutoEmbed_stubs = array(
     'embed-height' => '425',
   ),
   array(
-    'id' => 'joost',
     'title' => 'Joost',
     'website' => 'http://www.joost.com',
     'url-match' => 'http://(?:www\.)?joost\.com/.*#id=([0-9A-z]*)',
@@ -829,7 +823,6 @@ $AutoEmbed_stubs = array(
     'embed-height' => '324',
   ),
   array(
-    'id' => 'justin',
     'title' => 'JustinTV',
     'website' => 'http://www.justin.tv',
     'url-match' => 'http://(?:\w{0,3}\.)?justin\.tv/(\w*)',
@@ -952,7 +945,6 @@ $AutoEmbed_stubs = array(
     'embed-height' => '350',
   ),
   array(
-    'id' => 'mpotv',
     'title' => 'Mpora TV',
     'website' => 'http://tv.mpora.com',
     'url-match' => 'http://tv\.mpora\.com/watch/(\w{9})',
@@ -1087,7 +1079,6 @@ $AutoEmbed_stubs = array(
     'embed-height' => '350',
   ),
   array(
-    'id' => 'passin',
     'title' => 'Passionato (Single Preview)',
     'website' => 'http://www.passionato.com',
     'type' => 'audio',
@@ -1097,7 +1088,6 @@ $AutoEmbed_stubs = array(
     'embed-height' => '200',
   ),
   array(
-    'id' => 'pasplay',
     'title' => 'Passionato (Playlist Preview)',
     'website' => 'http://www.passionato.com',
     'type' => 'audio',
@@ -1164,7 +1154,6 @@ $AutoEmbed_stubs = array(
     'embed-height' => '353',
   ),
   array(
-    'id' => 'sct',
     'title' => 'ScreenToaster',
     'website' => 'http://www.screentoaster.com',
     'type' => 'video',
@@ -1192,7 +1181,6 @@ $AutoEmbed_stubs = array(
     'embed-height' => '350',
   ),
   array(
-    'id' => 'shavi',
     'title' => 'ShareView',
     'website' => 'http://www.shareview.us',
     'url-match' => 'http://(?:www\.)?shareview\.us/view/([0-9]{1,10})/',
@@ -1201,7 +1189,6 @@ $AutoEmbed_stubs = array(
     'embed-height' => '350',
   ),
   array(
-    'id' => 'shark',
     'title' => 'Sharkle',
     'website' => 'http://www.sharkle.com',
     'url-match' => '(http://(?:www\.)?sharkle\.com/externalPlayer/(?:(?:(?:[0-9a-z]{1,25})/){3}))',
@@ -1404,7 +1391,6 @@ $AutoEmbed_stubs = array(
     'embed-height' => '288',
   ),
   array(
-    'id' => 'videa',
     'title' => 'Videa',
     'website' => 'http://www.videa.hu',
     'url-match' => 'http://(?:www\.)?videa\.hu/(?:(?:[^"]*)-|flvplayer\.swf\?v=)([0-9a-z]{16})',
