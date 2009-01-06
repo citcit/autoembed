@@ -13,7 +13,7 @@ if (!empty($_GET['url'])) {
 $api_current = "current";
 include "../includes/header.inc.php";
 ?>
-<h2>AutoEmbed API Web Service</h2>
+<h2>AutoEmbed Web Service</h2>
 
 
 <div class="box">
