@@ -16,7 +16,7 @@ include "../includes/header.inc.php";
 <h2>AutoEmbed Web Service</h2>
 
 
-<div class="box">
+<div class="box" style="padding-bottom:0;">
   <h4><label for="url">Enter a URL to Auto-Embedify</label></h4>
   <form methpd="GET" action="<?=BASE_URL?>/api/">
     <input type="text" id="url" size="60" name="url" value="<?=$_GET['url']?>" class="text" onClick="this.select();" />
