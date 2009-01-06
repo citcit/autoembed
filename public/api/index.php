@@ -8,5 +8,6 @@ include "../includes/header.inc.php";
 <p>Coming soon.</p>
 
 <?
+
 include "../includes/footer.inc.php";
 ?>
