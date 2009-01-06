@@ -43,7 +43,7 @@ $sites = array(
 		'website' => 'http://www.youtube.com',
 		'type' => 'video',
 		'embed-pattern' => 'http://(?:video\.google\.(?:com|com\.au|co\.uk|de|es|fr|it|nl|pl|ca|cn)/(?:[^"]*?))?(?:(?:www|au|br|ca|es|fr|de|hk|ie|in|il|it|jp|kr|mx|nl|nz|pl|ru|tw|uk)\.)?youtube\.com(?:[^"]*?)?(?:&|&amp;|/|\?|;|\%3F|\%2F)(?:video_id=|v(?:/|=|\%3D|\%2F))([0-9a-z-_]{11})',
-		'embed-movie' => 'http://www.youtube.com/v/$2&ap=%2526fmt%3D18&rel=0',
+		'embed-movie' => 'http://www.youtube.com/v/$2&rel=0&fs=1',
     'embed-width' => '425',
 		'embed-height' => '344',
 	),
