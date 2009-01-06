@@ -4,15 +4,12 @@
 /_/ \_\_,_|\__\___/___|_|_|_|_.__/\___\__,_|
                                             
 AutoEmbed - Audio/Video embed snippet generator
+- by ------------------------------------------
+Corey Wilson - http://2catdesigns.com
+Jason Hines - http://devtwo.com
+
 -----------------------------------------------
-
-AutoEmbed is a PHP class that parses media information from a given URL.
-
 Website: http://www.autoembed.com
 Project: http://code.google.com/p/autoembed
+Support: http://groups.google.com/group/autoembed
 
-
-Supported Video Sites
----------------------
-
-List of supported video sites coming soon.
