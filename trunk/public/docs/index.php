@@ -3,7 +3,7 @@ $docs_current = "current";
 include "../includes/header.inc.php";
 ?>
 
-<h2>AutoEmbed PHP Class API Documentation</h2>
+<h2>Class API Documentation</h2>
 <p>Also coming soon.</p>
 
 <h3>Get Support</h3>
