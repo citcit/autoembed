@@ -3,7 +3,7 @@ $intro_current = "current";
 include "includes/header.inc.php";
 ?>
 
-<h2>AutoEmbed, finally a url-to-embed function!</h2>
+<h2>AutoEmbed - Finally a url-to-embed function!</h2>
 
 <p><em>AutoEmbed</em> is a utility and service that generates
 <a target="_new" href="http://www.w3schools.com/flash/flash_inhtml.asp">HTML embed tags</a> 
@@ -16,7 +16,7 @@ on a website.</p>
 <a href="api/">web service</a> for performing <em>URL to Embedded Video</em> conversions, 
 as well as a <a href="download/">downloadable PHP class</a>.</p>
 
-<h2>Quick Synopsis</h2>
+<h3>Quick Synopsis</h3>
 <pre>
 // Obtain a new instance of the class...
 $AE = new AutoEmbed();
