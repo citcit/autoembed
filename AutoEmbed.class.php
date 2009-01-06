@@ -32,7 +32,7 @@ class AutoEmbed {
   public function __construct() {
     global $stubs;
 
-    include_once 'sites.php';
+    include_once 'stubs.php';
   }
 
   /**
