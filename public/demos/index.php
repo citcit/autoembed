@@ -48,10 +48,10 @@ requests to the <a href="http://groups.google.com/group/autoembed/">AutoEmbed Pr
 
       <h4>Embedded Media</h4>
       <?=$embed_tag?>
-
+      <br /><br />
       <h4>Embed Code</h4>
       <textarea style="width:100%;" rows="10"><?=htmlspecialchars($embed_tag)?></textarea>
-      
+      <br /><br />      
       <h4>Flash Params</h4>
       <pre><?var_dump($flash_params)?></pre>
       
