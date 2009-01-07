@@ -80,7 +80,7 @@ $test_urls = array(
    'EASportsWorld' => 'http://videocdn.easw.easports.com/easportsworld/media/7499/912A0001_1_FLV_VIDEO_OUh.flv',
    'EbaumsWorld Audio' => 'http://media.ebaumsworld.com/audio/mikeyp/Armaggedon.mp3',
    'EbaumsWorld Videos' => 'http://www.ebaumsworld.com/mediaplayer.swf?file=http://media.ebaumsworld.com/mediaFiles/video/526693/475057.flv',
-   'ESPN' => 'http://espn.go.com/video/clip?id=3814449',
+   'ESPN' => 'http://sports.espn.go.com/broadband/video/videopage?videoId=3799899',
    'Excessif (DVDrama)' => 'http://www.excessif.com/video/index.php?flashvideo=watchmen_trailer_fr.flv',
    'Facebook' => 'http://www.facebook.com/video/video.php?v=65568150143',
    'FunnyOrDie' => 'http://www.funnyordie.com/videos/aac8052585/15000yellow-postits-from-aaronlson5',
