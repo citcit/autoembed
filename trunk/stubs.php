@@ -251,22 +251,6 @@ $AutoEmbed_stubs = array(
     'embed-height' => '412',
   ),
   array(
-    'title' => 'Brightcove.tv',
-    'website' => 'http://www.brightcove.tv',
-    'url-match' => 'http://(?:www\.)?brightcove\.tv/title.jsp\?(?:[^"]*?)?title=([0-9]{1,12})',
-    'embed-src' => 'http://www.brightcove.tv/playerswf?allowFullScreen=true&initVideoId=$2&servicesURL=http://www.brightcove.tv&viewerSecureGatewayURL=https://www.brightcove.tv&cdnURL=http://admin.brightcove.com&autoStart=false',
-    'embed-width' => '486',
-    'embed-height' => '412',
-  ),
-  array(
-    'title' => 'Broadcaster',
-    'website' => 'http://www.broadcaster.com',
-    'url-match' => '(http://(?:www\.)?broadcaster\.com/video/external/player\.swf\?clip=([0-9a-z_-]*?)\.flv)',
-    'embed-src' => '$2',
-    'embed-width' => '425',
-    'embed-height' => '340',
-  ),
-  array(
     'title' => 'CarPix Tv',
     'website' => 'http://carpixtv.vidiac.com',
     'url-match' => 'http://carpixtv\.vidiac\.com/video/((?:[0-9a-z]{8})(?:(?:-(?:[0-9a-z]{4})){3})-(?:[0-9a-z]{12}))\.htm',
@@ -997,14 +981,6 @@ $AutoEmbed_stubs = array(
     'embed-height' => '334',
   ),
   array(
-    'title' => 'MySoccerMedia',
-    'website' => 'http://www.mysoccermedia.com',
-    'url-match' => '(http://(?:www\.)?mysoccermedia\.com/videos/(?:[0-9a-f]{14,16})\.flv)',
-    'embed-src' => 'http://mysoccermedia.com/soccer_pl2_playBt.swf?video_flv=$2',
-    'embed-width' => '443',
-    'embed-height' => '310',
-  ),
-  array(
     'title' => 'MyShows.cn/SeeHaha.com',
     'website' => 'http://www.myshows.cn',
     'url-match' => '(http://www\.seehaha\.com/flash/player\.swf\?vidFileName=(?:[0-9]*?)\.flv)',
@@ -1462,14 +1438,6 @@ $AutoEmbed_stubs = array(
     'embed-src' => 'http://wegame.com/static/flash/player2.swf?tag=$2',
     'embed-width' => '480',
     'embed-height' => '387',
-  ),
-  array(
-    'title' => 'Wipodo',
-    'website' => 'http://www.wipodo.com',
-    'url-match' => 'http://(?:www\.)?wipido\.com/(?:profile/)?video/(?:embedconfig/)?([0-9]{1,10})(?:%3Ftemplate%3Dgamersydevideo/)?',
-    'embed-src' => 'http://www.wipido.com/static/wipidotv/mediaplayer.swf?id=$2&file=http://www.wipido.com/uploads/videos/$2_mq.mp4&image=http://www.wipido.com/uploads/videos/$2_screenie.jpg&logo=http://www.wipido.com/images/web/overlay.png&link=http://www.wipido.com/video/$2&linktarget=_blank&backcolor=0x2a2f35&frontcolor=0xffffff&lightcolor=0xff0000&screencolor=0x000000&height=320&width=480',
-    'embed-width' => '480',
-    'embed-height' => '320',
   ),
   array(
     'title' => 'Yahoo Video',
