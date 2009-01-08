@@ -97,6 +97,7 @@ $test_urls = array(
   'GrassRoots ItvLocal' => 'http://grassroots.itvlocal.com/Clip.aspx?key=C06D89C1B42F1829',
   'GrindTv' => 'http://www.grindtv.com/video/surf/mick_fanning_with_his_new_resin8_tokoro/',
   'TheHub' => 'http://hub.witness.org/en/node/32',
+  'Howcast' => 'http://www.howcast.com/videos/43990-How-To-Fit-in-on-Your-First-Day-Of-Work',
   'Hulu (Usa Only)' => 'http://www.hulu.com/watch/51087/the-daily-show-with-jon-stewart-road-to-the-doghouse---puppedential-debate#s-p1-st-i1',
   'Humour' => 'http://www.humour.com/videos-comiques/videos.asp?VIDvideo=11924',
   'Video.i.ua' => 'http://video.i.ua/user/782893/8652/75483/',

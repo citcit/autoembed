@@ -627,6 +627,14 @@ $AutoEmbed_stubs = array(
     'embed-height' => '260',
   ),
   array(
+    'title' => 'Howcast',
+    'website' => 'http://www.howcast.com',
+    'url-match' => 'http://(?:www\.)?howcast\.com/videos/([0-9]{1,8})',
+    'embed-src' => 'http://www.howcast.com/flash/howcast_player.swf?file=$2&theme=black',
+    'embed-width' => '432',
+    'embed-height' => '276',
+  ),
+  array(
     'title' => 'Hulu (Usa Only)',
     'website' => 'http://www.hulu.com',
     'url-match' => '(http://(?:www\.)?hulu\.com/embed/(?:[a-z0-9-_]{10,32}))',
