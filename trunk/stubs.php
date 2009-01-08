@@ -874,6 +874,14 @@ $AutoEmbed_stubs = array(
     'embed-height' => '385',
   ),
   array(
+    'title' => 'MadnessVideo',
+    'website' => 'http://www.madnessvideo.net',
+    'url-match' => 'http:\/\/(?:www\.)?madnessvideo\.net\/(.*)',
+    'embed-src' => 'http://www.madnessvideo.net/emb.aspx/$2',
+    'embed-width' => '400',
+    'embed-height' => '320',
+  ),
+  array(
     'title' => 'Milliyet',
     'website' => 'http://video.milliyet.com.tr',
     'url-match' => '(http://video\.milliyet\.com\.tr/m\.swf\?id=(?:[0-9]{1,12})&(?:amp;)?tarih=(?:[0-9]{4})/(?:[0-9]{2})/(?:[0-9]{1,2}))',
