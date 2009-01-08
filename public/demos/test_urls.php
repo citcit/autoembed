@@ -127,6 +127,7 @@ $test_urls = array(
   'Machinima (Old)' => 'http://www.machinima.com/film/view&id=31989',
   'Machinima (New)' => 'http://machinima.com:80/f/f37abee44d63333bbe3c96ace97751a2',
   'Video.mail.ru' => 'http://video.mail.ru/mail/manzev/46/60.html?smslast_from_main=1',
+  'MadnessVideo' => 'http://www.madnessvideo.net/videos.aspx/video~give_me_cuppy_cake/Give_Me_Cuppy_Cake/Funny_videos/',
   'Milliyet' => 'http://video.milliyet.com.tr/m.swf?id=20732&tarih=2008/09/11',
   'MoFile' => 'http://tv.mofile.com/7OFDP585',
   'MotionBox' => 'http://www.motionbox.com/videos/7996d0b5191ff6',
