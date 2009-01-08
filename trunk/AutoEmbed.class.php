@@ -223,7 +223,7 @@ class AutoEmbed {
    * stub we are working with
    */
   private function _setDefaultParams() {
-    
+
     $flashvars = $this->_stub['flashvars'];
     $source = $this->_stub['embed-src'];
 
@@ -240,7 +240,7 @@ class AutoEmbed {
             'wmode' => 'transparent',
             'quality' => 'high',
             'allowFullScreen' => 'true',
-            'allowScriptAccess' => 'never',
+            'allowScriptAccess' => 'always',
             'pluginspage' => 'http://www.macromedia.com/go/getflashplayer',
             'autoplay' => 'false',
             'autostart' => 'false',
@@ -252,7 +252,7 @@ class AutoEmbed {
             'wmode' => 'transparent',
             'quality' => 'high',
             'allowFullScreen' => 'true',
-            'allowScriptAccess' => 'never',
+            'allowScriptAccess' => 'always',
             'pluginspage' => 'http://www.macromedia.com/go/getflashplayer',
             'autoplay' => 'false',
             'autostart' => 'false',
