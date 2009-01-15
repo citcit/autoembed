@@ -1,5 +1,6 @@
 <?php
 $support_current = "current";
+$title = "Support";
 include "../includes/header.inc.php";
 ?>
 

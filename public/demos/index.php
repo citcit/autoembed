@@ -1,5 +1,6 @@
 <?php
 $demo_current = "current";
+$title = "Demos";
 include "../includes/header.inc.php";
 
 # load the test urls
