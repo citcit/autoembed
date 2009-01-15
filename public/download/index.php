@@ -5,7 +5,7 @@ include "../includes/header.inc.php";
 
 <h2>Download the AutoEmbed PHP Class</h2>
 
-<p><em>No releases yet, stay tuned.</em></p>
+<p><a href="http://autoembed.googlecode.com/files/AutoEmbed-1.0.tar.gz">AutoEmbed-1.0.tar.gz</a></p>
 
 <p>This software is licensed under the <a href="http://www.gnu.org/licenses/lgpl.txt">GNU Lesser General Public License</a>.</p>
 
