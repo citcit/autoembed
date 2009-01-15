@@ -20,8 +20,8 @@ cp ../AutoEmbed.class.php $PDIR
 cp ../LICENSE $PDIR
 cp ../README $PDIR
 cp ../stubs.php $PDIR
-tar vcfz ../public/download/$PFILE $PDIR
-echo "File written to ../public/download/$PFILE"
+tar vcfz $PFILE $PDIR
+echo "File written to $PFILE"
 echo "Cleaning up ..."
 rm -rf $PDIR
 echo "Done"
