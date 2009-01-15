@@ -1,11 +1,10 @@
 <?php
 /**
  * This file is part of AutoEmbed.
- * http://code.google.com/p/autoembed/
+ * http://autoembed.com
  *
  * Some regular expressions found in this file were borrowed 
  * from Karl Benson & Rene-Gilles Deberdt.
- *
  *
  * AutoEmbed is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
