@@ -3,6 +3,8 @@
  * This file is part of AutoEmbed.
  * http://autoembed.com
  *
+ * $Id$
+ *
  * Some regular expressions found in this file were borrowed 
  * from Karl Benson & Rene-Gilles Deberdt.
  *
