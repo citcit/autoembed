@@ -1,5 +1,6 @@
 <?php
 $download_current = "current";
+$title = "Download";
 include "../includes/header.inc.php";
 ?>
 

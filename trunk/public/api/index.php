@@ -11,6 +11,7 @@ if (!empty($_GET['url'])) {
 }
 
 $api_current = "current";
+$title = "API Service";
 include "../includes/header.inc.php";
 ?>
 <h2>AutoEmbed Web Service</h2>

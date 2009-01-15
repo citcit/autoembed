@@ -4,7 +4,7 @@ define('BASE_URL','');
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>AutoEmbed - Programmable Embedded Media for PHP</title>
+<title>AutoEmbed | <?=$title?> - Embedded Media HTML Class for PHP</title>
 <link rel="stylesheet" href="<?=BASE_URL?>/stylesheets/common.css" type="text/css" />
 <meta name="description" content="AutoEmbed is a PHP class for manipulating embedded audio and video from various Internet sites." /> 
 <meta name="keywords" content="php, embed, video, audio, object, media, php class, extract, html, code, web service, api, download, utility, flash, demo" /> 

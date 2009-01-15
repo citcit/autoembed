@@ -1,4 +1,5 @@
 <?php
+$title = "Video Embedding";
 include "includes/header.inc.php";
 ?>
 

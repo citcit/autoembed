@@ -1,5 +1,6 @@
 <?php
 $about_current = "current";
+$title = "Usage";
 include "../includes/header.inc.php";
 ?>
 
