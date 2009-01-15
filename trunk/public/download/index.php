@@ -17,7 +17,7 @@ include "../includes/header.inc.php";
 and <em>Jason Hines</em> of <a target="_new" href="http://devtwo.com/">DevTwo Software</a>.</p>
 
 <div class="box">
-  <div style="float:left;width:75%;">
+  <div style="float:left;width:60%;">
     <h3 style="margin:0;">Donations? Hey Thanks!</h3>
     <p>We offer this service and product free of charge, and are glad to do so.  However, sending
     us a few bucks is hands-down the best way to get your suggestion or feature request
