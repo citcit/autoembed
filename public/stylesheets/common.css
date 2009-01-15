@@ -15,7 +15,7 @@ p a:hover {text-decoration:underline;}
 .clear {clear:both;}
 h2 {color:#333333;margin-bottom:3px;font-weight:normal;letter-spacing:-1px;}
 h3,h4 {color:#333333;margin-bottom:5px;margin-top:0;}
-h3 {font-weight:normal;}
+h3 {font-weight:normal;margin-bottom:10px;}
 b {color:#333;}
 p,li {margin-top:0;color:#666;line-height:1.4em;}
 pre {background:#222;color:#ffffff;font-size:14px;padding:5px 10px;margin-top:0;margin-bottom:15px;}
