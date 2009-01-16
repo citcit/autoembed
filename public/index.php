@@ -14,10 +14,11 @@ on a website.</p>
 
 <ul>
   <li>Translate any given URL (from a supported video site) into an &lt;embed&gt; HTML snippet</li>
-  <li>Is very lightweight and does not depend on any external libraries</li>
+  <li>Very fast and lightweight - does not depend on any external libraries</li>
   <li>Available as a single PHP class, easily includable in your own projects</li>
   <li>Supports <a href="<?=BASE_URL?>/demos/">over 150 audio &amp; video sites</a> (with more being added often)</li>
   <li>Provides easy error checking in the event that a URL is not valid</li>
+  <li>Produces valid XHTML valid code</li>
 </ul>
 
 <p><b>Some programming is required.</b> <em>AutoEmbed</em> is available as a 
