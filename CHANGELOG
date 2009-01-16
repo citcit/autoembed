@@ -1,4 +1,5 @@
 
 Version 1.0
 -----------
-- Initial release
+- First initial release introduces basic pattern matching for determining a
+video's embed code.
