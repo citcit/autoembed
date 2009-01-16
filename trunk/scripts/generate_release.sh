@@ -19,6 +19,7 @@ mkdir $PDIR
 cp ../AutoEmbed.class.php $PDIR
 cp ../LICENSE $PDIR
 cp ../README $PDIR
+cp ../CHANGELOG $PDIR
 cp ../stubs.php $PDIR
 tar vcfz $PFILE $PDIR
 echo "File written to $PFILE"
