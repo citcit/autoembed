@@ -27,7 +27,7 @@ direct inquires to the <a href="http://groups.google.com/group/autoembed/">AutoE
   <div id="demo-list">
     <h4>Select a site</h4>
     <ul>
-      <? foreach ($verified_urls as $site=>$url) { ?>
+      <? foreach ($wip_urls as $site=>$url) { ?>
         <li class="<?=(base64_encode($url)==$_GET['url']?'current':'')?>"><a href="?url=<?=base64_encode($url)?>#demo-area" title="Test: <?=$url?>"><?=$site?></a></li>
       <? } ?>
       <br class="clear" />

@@ -49,10 +49,16 @@ class AutoEmbed {
 
     foreach ($AutoEmbed_stubs as $stub) { 
       if ( preg_match('~'.$stub['url-match'].'~imu', $url, $match) ) {
-        $this->_media_id = $match;
         $this->_stub = $stub;
-        $this->_setDefaultParams($url);
-        return true;
+
+        if ( isset($stub['fetch-match'] ) ) {
+          return $this->_parseLink($url);
+
+        } else {
+          $this->_media_id = $match;
+          $this->_setDefaultParams();
+          return true;
+        }
       }
     }
 
@@ -194,6 +200,19 @@ class AutoEmbed {
     }
 
     return true;
+  }
+
+  /**
+   * Attempt to parse the embed id from a given URL
+   */ 
+  private function _parseLink($url) {
+    if ( preg_match('~'.$this->_stub['fetch-match'].'~imu', file_get_contents($url), $match) ) {
+      $this->_media_id = $match;
+      $this->_setDefaultParams();
+      return true;
+    }
+
+    return false;
   }
 
   /**
