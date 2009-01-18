@@ -711,10 +711,11 @@ $AutoEmbed_stubs = array(
   array(
     'title' => 'Imeem (Video)',
     'website' => 'http://www.imeem.com',
-    'url-match' => '(http://media\.imeem\.com/v/(?:[0-9a-z_-]{10}))',
-    'embed-src' => '$2/aus=false/',
-    'embed-width' => '400',
-    'embed-height' => '271',
+    'url-match' => 'http:\/\/(?:www\.)?imeem\.com\/[a-z0-9-_]*\/video\/[A-z0-9]{4,10}\/',
+    'fetch-match' => '<link rel="video_src" href="([A-z:/\.0-9-_=]*)',
+    'embed-src' => '$2',
+    'embed-width' => '460',
+    'embed-height' => '390',
   ),
   array(
     'title' => 'ImageShack',
