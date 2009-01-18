@@ -5,8 +5,17 @@ API
 that we are unable to create from a URL alone.
 
 Stubs
-- Added support for Hulu, CBS News, EbaumsWorld, Break, TrailerAddict
-                    Atom and Glumbert
+- Added support for sites
+     Hulu 
+     CBS News
+     EbaumsWorld
+     Break
+     TrailerAddict
+     Atom 
+     Imeem Music
+     Imeem Videos
+     Imeem Playlists
+     Glumbert
 
 Version 1.0
 -----------
