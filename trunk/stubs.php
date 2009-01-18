@@ -197,7 +197,8 @@ $AutoEmbed_stubs = array(
   array(
     'title' => 'Atom',
     'website' => 'http://www.atom.com',
-    'url-match' => '(http://media\.mtvnservices\.com/mgid:hcx:content:atom\.com:(?:(?:[0-9a-z]{8})(?:(?:-(?:[0-9a-z]{4})){3})-(?:[0-9a-z]{12})))',
+    'url-match' => 'http://(?:www\.)?atom\.com/funny_videos/([A-z0-9-_]*)/',
+    'fetch-match' => '<embed src="([A-z:/\.0-9-_=]*)"',
     'embed-src' => '$2',
     'embed-width' => '425',
     'embed-height' => '354',
@@ -642,7 +643,8 @@ $AutoEmbed_stubs = array(
   array(
     'title' => 'Hulu (Usa Only)',
     'website' => 'http://www.hulu.com',
-    'url-match' => '(http://(?:www\.)?hulu\.com/embed/(?:[a-z0-9-_]{10,32}))',
+    'url-match' => 'http://(?:www\.)?hulu\.com/watch/(?:[0-9]{1,8})/',
+    'fetch-match' => '<link rel="video_src" href="([A-z:/\.0-9-_=]*)',
     'embed-src' => '$2',
     'embed-width' => '512',
     'embed-height' => '296',
@@ -1273,7 +1275,7 @@ $AutoEmbed_stubs = array(
     'title' => 'TrailerAddict',
     'website' => 'http://www.traileraddict.com',
     'url-match' => 'http://(?:www\.)?traileraddict\.com/trailer/',
-    'fetch-match' => '(http://(?:www\.)?traileraddict\.com/emd/(?:[0-9]{1,10}))',
+    'fetch-match' => '(http://(?:www\.)?traileraddict\.com/em(?:d|b)/(?:[0-9]{1,10}))',
     'embed-src' => '$2',
     'embed-width' => '450',
     'embed-height' => '279',
