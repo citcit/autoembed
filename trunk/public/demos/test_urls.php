@@ -157,6 +157,7 @@ $wip_urls = array(
   'BooMp3' => 'http://boomp3.com/listen/c0zjau3_p',
   'Break' => 'http://www.break.com/usercontent/2008/3/cat-472832.html',
   'Cold-Link' => 'http://cold-link.com/play/80363341',
+  'CBS News' => 'http://www.cbsnews.com/video/watch/?id=4727214n',
   'CrunchyRoll' => 'http://www.crunchyroll.com/media-509768/Naruto-Shippuden-Episode-221-Homecoming.html',
   'Dave.tv' => 'http://dave.uktv.co.uk/video/totally-viral-animals/fancy-dress/',
   'DoubleViking' => 'http://www.doubleviking.com/videos/page0.html/a-very-annoying-wake-up-call-10821.html',
