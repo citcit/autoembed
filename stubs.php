@@ -1226,6 +1226,14 @@ $AutoEmbed_stubs = array(
     'embed-height' => '379',
   ),
   array(
+    'title' => 'CBS News',
+    'website' => 'http://www.cbsnews.com',
+    'url-match' => 'http://(?:www\.)?cbsnews\.com/video/watch/\?id=([a-z0-9]*)',
+    'embed-src' => 'http://www.cbs.com/thunder/swf30can10cbsnews/rcpHolderCbs-3-4x3.swf?link=http://www.cbsnews.com/video/watch/?id=$2',
+    'embed-width' => '425',
+    'embed-height' => '324',
+  ),
+  array(
     'title' => 'Streetfire',
     'website' => 'http://www.streetfire.net',
     'url-match' => 'http://(?:www\.|videos\.)?streetfire\.net/video/((?:[0-9a-z]{8})(?:(?:-(?:[0-9a-z]{4})){3})-(?:[0-9a-z]{12}))\.htm',
