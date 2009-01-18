@@ -237,9 +237,10 @@ $AutoEmbed_stubs = array(
   ),
   array(
     'title' => 'Break',
-    'website' => 'http://www.break.com',
-    'url-match' => '(http://embed\.break\.com/(?:[0-9a-z]{8}))',
-    'embed-src' => '$2',
+    'website' => 'http://www.break.com/',
+    'url-match' => 'http://(?:www\.)?break\.com/(?:index|usercontent)/',
+    'fetch-match' => 'http://embed\.break\.com/([0-9a-z]{1,8})',
+    'embed-src' => '$1',
     'embed-width' => '464',
     'embed-height' => '392',
   ),
@@ -258,6 +259,16 @@ $AutoEmbed_stubs = array(
     'embed-src' => 'http://carpixtv.vidiac.com/vidiac.swf?video=$2',
     'embed-width' => '428',
     'embed-height' => '352',
+  ),
+  array(
+    'title' => 'CBS News',
+    'website' => 'http://www.cbsnews.com/video',
+    'url-match' => 'http://(?:www\.)?cbsnews\.com/video/watch/',
+    'fetch-match' => 'playFlashVideo\(.([a-z0-9-_]{1,32}).\)',
+    'embed-src' => 'http://www.cbs.com/thunder/swf30can10cbsnews/rcpHolderCbs-3-4x3.swf',
+    'embed-width' => '425',
+    'embed-height' => '324',
+    'flashvars' => 'autoPlayVid=false&releaseURL=http://release.theplatform.com/content.select?pid=$2&name=cbsPlayer&allowScriptAccess=always&wmode=transparent&embedded=y'
   ),
   array(
     'title' => 'Cellfish',
@@ -482,10 +493,12 @@ $AutoEmbed_stubs = array(
   array(
     'title' => 'EbaumsWorld Videos',
     'website' => 'http://www.ebaumsworld.com',
-    'url-match' => '(?:http://www\.ebaumsworld\.com/mediaplayer\.swf\?file=)?(http://media\.ebaumsworld\.com/mediaFiles/video/(?:[0-9]{1,12})/(?:[0-9]{1,12})\.flv)',
-    'embed-src' => 'http://www.ebaumsworld.com/mediaplayer.swf?file=$2',
+    'url-match' => 'http://www\.ebaumsworld\.com/video/watch',
+    'fetch-match' => 'id="embed".*flashvars=&quot;(.*)&quot;\ wmode',
+    'embed-src' => 'http://www.ebaumsworld.com/mediaplayer.swf',
     'embed-width' => '425',
     'embed-height' => '345',
+    'flashvars' => '$2',
   ),
   array(
     'title' => 'ESPN',
