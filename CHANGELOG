@@ -1,3 +1,12 @@
+Version 1.1
+-----------
+API
+- Added support for parsing HTML of URLs to create embed code for sites
+that we are unable to create from a URL alone.
+
+Stubs
+- Added support for CBS News, EbaumsWorld Video and Break
+
 
 Version 1.0
 -----------
