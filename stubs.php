@@ -888,6 +888,15 @@ $AutoEmbed_stubs = array(
     'embed-height' => '300',
   ),
   array(
+    'title' => 'MSNBC',
+    'website' => 'http://www.msnbc.msn.com/',
+    'url-match' => 'http://www\.msnbc\.msn\.com/id/(?:[0-9]{1,9})/vp/([0-9]{1,9})',
+    'embed-src' => 'http://msnbcmedia.msn.com/i/MSNBC/Components/Video/_Player/swfs/embedPlayer/EmbeddedPlayer_I4.swf?domain=www.msnbc.msn.com&amp;settings=22425448&amp;useProxy=true&amp;wbDomain=www.msnbc.msn.com&amp;launch=$2&amp;sw=1920&amp;sh=1200&amp;EID=oVPEFC&amp;playerid=22425001',
+    'embed-width' => '425',
+    'embed-height' => '339',
+  ),
+
+  array(
     'title' => 'Video.mail.ru',
     'website' => 'http://video.mail.ru',
     'url-match' => 'http://video\.mail\.ru/mail/([0-9a-z_-]*?)/([0-9]{1,4})/([0-9]{1,4})\.html',
