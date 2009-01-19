@@ -110,6 +110,7 @@ $verified_urls = array(
   'Mpora' => 'http://video.mpora.com/watch/QGjKFU4Wr/',
   'Mpora TV' => 'http://tv.mpora.com/watch/KnSR2bJ6K',
   'MSN Live/Soapbox' => 'http://video.msn.com/video.aspx?mkt=en-US&vid=53c9b8b7-1b73-4c2e-8870-b71d5ed00b2c',
+  'MSNBC' => 'http://www.msnbc.msn.com/id/21134540/vp/28721511#28721510',
   'MtvU (Usa Only)' => 'http://www.mtvu.com/video/?id=1570773&vid=178499',
   'MusOpen' => 'http://www.musopen.com/view.php?type=piece&id=226',
   'MyNet' => 'http://video.eksenim.mynet.com/albeymeta/Korkun_ntikam/259284/c3947604309024d38e5a46ed78b54d78',
