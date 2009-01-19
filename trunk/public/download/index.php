@@ -13,7 +13,7 @@ include "../includes/header.inc.php";
 
 <p><em>AutoEmbed</em> is the product of collaborative development between
 <em>Corey Wilson</em> of
-<br/><a target="_new" href="http://2catdesigns.com">2Cat Designs</a>
+<br/><a target="_new" href="http://2catdesigns.com">2catdesigns</a>
 and <em>Jason Hines</em> of <a target="_new" href="http://devtwo.com/">DevTwo Software</a>.</p>
 
 <div class="box">
