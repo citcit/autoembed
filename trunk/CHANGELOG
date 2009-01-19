@@ -18,6 +18,10 @@ Stubs
      Glumbert
      BoFunk
 
+- Correct stub
+     Blip
+
+
 Version 1.0
 -----------
 - First initial release introduces basic pattern matching for determining a
