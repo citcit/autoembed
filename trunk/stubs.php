@@ -27,9 +27,11 @@
     'title'        =>  Source the embeded media comes from
     'website'      =>  URI of the media source
     'url-match'    =>  Regexp for matching the submitted url to a stub
-    'embed-src'    =>  The source of the media to embed.  Replace $2, $3, etc with matches from the url-match regexp ($1 is the entire matched url)
+    'embed-src'    =>  The source of the media to embed.  Replace $2, $3, etc with matches from the url-match or fetch-match regexp ($1 is the entire matched url)
     'embed-width'  =>  The default width of the embeded object
     'embed-height' =>  The default width of the embeded object
+    'fetch-match'  => (optional) if set, html will be fetched and this regexp will be used to pull the media id or the source of the video
+    'flashvars'    => (optional) if set, will be passed in the embed tag.  Replace $2, $3, etc with matches from url-match or fetch-match
   ),
 */
 $AutoEmbed_stubs = array(
