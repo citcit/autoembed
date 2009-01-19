@@ -55,7 +55,6 @@ class AutoEmbed {
           return $this->_parseLink($url);
 
         } else {
-print 'found';
           $this->_media_id = $match;
           $this->_setDefaultParams();
           return true;
