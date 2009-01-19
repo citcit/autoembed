@@ -222,8 +222,9 @@ $AutoEmbed_stubs = array(
   array(
     'title' => 'BoFunk',
     'website' => 'http://www.bofunk.com',
-    'url-match' => '(http://www.bofunk.com/e/(?:[0-9a-z]{39}))',
-    'embed-src' => '$2',
+    'url-match' => 'http://(?:www\.)?bofunk\.com/video/[0-9]{2,7}/',
+    'fetch-match' => '<embed src="/[a-z]/([A-z:/\.0-9-_=]*)"',
+    'embed-src' => 'http://www.bofunk.com/e/$2',
     'embed-width' => '446',
     'embed-height' => '370',
   ),
