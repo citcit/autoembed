@@ -6,8 +6,8 @@ if (!empty($_GET['url'])) {
     $embed_code = false;
   } else {
     $embed_code = $AE->getEmbedCode();
-    if (@$_GET['fmt']=='raw') die($embed_code);
   }
+  if (@$_GET['fmt']=='raw') die($embed_code);
 }
 
 $api_current = "current";
