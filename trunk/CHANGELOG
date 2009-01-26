@@ -1,3 +1,16 @@
+Version 1.2
+-----------
+API
+- Strip out all non-ascii chars from the source of a
+fetched url to help preg_match. 
+
+Stubs
+- Added support for sites
+     BoingBoing TV
+     Blastro
+     Today's Big Thing
+
+
 Version 1.1
 -----------
 API

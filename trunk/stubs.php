@@ -223,18 +223,34 @@ $AutoEmbed_stubs = array(
     'embed-height' => '315',
   ),
   array(
+    'title' => 'Blastro',
+    'website' => 'http://www.blastro.com',
+    'url-match' => 'http://(?:www\.)?blastro\.com/player/([a-z0-9-_]*)\.html',
+    'embed-src' => 'http://images.blastro.com/images/flashplayer/flvPlayer.swf?site=www.blastro.com&amp;filename=$2',
+    'embed-width' => '512',
+    'embed-height' => '408',
+  ),
+  array(
     'title' => 'BoFunk',
     'website' => 'http://www.bofunk.com',
     'url-match' => 'http://(?:www\.)?bofunk\.com/video/[0-9]{2,7}/',
-    'fetch-match' => '<embed src="/[a-z]/([A-z:/\.0-9-_=]*)"',
+    'fetch-match' => '<embed src="/[a-z]/([a-z:/\.0-9-_=?%]*)"',
     'embed-src' => 'http://www.bofunk.com/e/$2',
     'embed-width' => '446',
     'embed-height' => '370',
   ),
   array(
+    'title' => 'BoingBoing TV',
+    'website' => 'http://tv.boingboing.net',
+    'url-match' => 'http://tv\.boingboing.net/[0-9]{4}(?:/[0-9]{2}){2}/[a-z\-0-9]*\.html',
+    'fetch-match' => '<embed src="([a-z:/\.0-9-_=?%]*)"',
+    'embed-src' => '$2',
+    'embed-width' => '480',
+    'embed-height' => '400',
+  ),
+  array(
     'title' => 'BooMp3',
     'website' => 'http://www.boomp3.com',
-    'type' => 'audio',
     'url-match' => 'http://(?:www\.|static\.)?boomp3\.com/(?:listen/|player\.swf\?song=)([0-9a-z_-]{11})',
     'embed-src' => 'http://static.boomp3.com/player.swf?song=$2&noinfo=1',
     'embed-width' => '200',
@@ -481,7 +497,6 @@ $AutoEmbed_stubs = array(
   array(
     'title' => 'Divshare',
     'website' => 'http://www.divshare.com',
-    'type' => 'audio',
     'url-match' => 'http://www\.divshare\.com/download/([^"]*)',
     'embed-src' => 'http://www.divshare.com/flash/playlist?myId=$2',
     'embed-width' => '335',
@@ -610,12 +625,22 @@ $AutoEmbed_stubs = array(
   array(
     'title' => 'GoEar',
     'website' => 'http://www.goear.com',
-    'type' => 'audio',
     'url-match' => 'http://(?:www\.)?goear\.com/listen\.php\?v=([a-z0-9]{7})',
     'embed-src' => 'http://www.goear.com/files/external.swf?file=$2',
     'embed-width' => '353',
     'embed-height' => '132',
   ),
+  array(
+    'title' => 'Good.IS',
+    'website' => 'http://www.good.is',
+    'url-match' => 'http://www\.good\.is/\?p=([0-9]{3,7})',
+    'fetch-match' => '(http:\/\/s3\.amazonaws\.com\/.*Url=http:\/\/www\.good\.is\/\?p=[0-9]{3,7})&quot;\/&gt;&lt;embed src=&',
+    'embed-src' => '$2',
+    'embed-width' => '416',
+    'embed-height' => '264',
+    'flashvars' => '$2',
+  ),
+
   array(
     'title' => 'Glumbert',
     'website' => 'http://www.glumbert.com',
@@ -708,7 +733,6 @@ $AutoEmbed_stubs = array(
   array(
     'title' => 'iJigg',
     'website' => 'http://www.ijigg.com',
-    'type' => 'audio',
     'url-match' => 'http://(?:www\.)?ijigg\.com/(?:jiggPlayer\.swf\?songID=|songs/|trackback/)([0-9A-Z]{9,12})',
     'embed-src' => 'http://www.ijigg.com/jiggPlayer.swf?songID=$2&Autoplay=0',
     'embed-width' => '315',
@@ -734,7 +758,6 @@ $AutoEmbed_stubs = array(
   array(
     'title' => 'Imeem (Playlists)',
     'website' => 'http://www.imeem.com',
-    'type' => 'other',
     'url-match' => 'http://(?:www\.)?imeem\.com/[a-z0-9-_]*/playlist/[a-z0-9]{4,10}/',
     'fetch-match' => '<embed src="([A-z:/\.0-9-_=]*)"',
     'embed-src' => '$2',
@@ -787,7 +810,6 @@ $AutoEmbed_stubs = array(
   array(
     'title' => 'Jamendo',
     'website' => 'http://www.jamendo.com',
-    'type' => 'audio',
     'url-match' => 'http://(?:www\.|widgets\.)?jamendo\.com/(?:[a-z0-9]*?)/album/(?:\?album_id=)?([0-9]{1,10})',
     'embed-src' => 'http://widgets.jamendo.com/en/album/?album_id=$2&playertype=2008',
     'embed-width' => '200',
@@ -828,7 +850,6 @@ $AutoEmbed_stubs = array(
   array(
     'title' => 'JujuNation Audio',
     'website' => 'http://www.jujunation.com',
-    'type' => 'audio',
     'url-match' => 'http://(?:www\.)?jujunation.com/music\.php\?music_id=([0-9]{1,10})',
     'embed-src' => 'http://www.jujunation.com/player.swf?configXmlPath=http://www.jujunation.com/musicConfigXmlCode.php?pg=music_$2&playListXmlPath=http://www.jujunation.com/musicPlaylistXmlCode.php?pg=music_$2',
     'embed-width' => '220',
@@ -870,7 +891,6 @@ $AutoEmbed_stubs = array(
   array(
     'title' => 'Last.fm (Audio)',
     'website' => 'http://www.last.fm',
-    'type' => 'audio',
     'url-match' => 'http://(?:www\.)?last\.fm/music/([0-9a-z%\+_-]*?)/_/([0-9\+a-z_-]*)',
     'embed-src' => 'http://cdn.last.fm/webclient/s12n/s/5/lfmPlayer.swf',
     'embed-width' => '340',
@@ -993,7 +1013,6 @@ $AutoEmbed_stubs = array(
   array(
     'title' => 'Mp3tube',
     'website' => 'http://www.mp3tube.net',
-    'type' => 'audio',
     'url-match' => '(http://(?:www\.)?mp3tube\.net\/play\.swf\?id=(?:[0-9a-f]{32}))',
     'embed-src' => '$2',
     'embed-width' => '260',
@@ -1019,7 +1038,6 @@ $AutoEmbed_stubs = array(
   array(
     'title' => 'MusOpen',
     'website' => 'http://www.musopen.com',
-    'type' => 'audio',
     'url-match' => 'http://(?:www\.)?musopensource\.com/files/([^"\'\`\<\>\@\*\$]*?)\.mp3',
     'embed-src' => 'http://www.musopen.com/wimpy_button.swf?theFile=http://www.musopensource.com/files/$2.mp3',
     'embed-width' => '35',
@@ -1078,7 +1096,6 @@ $AutoEmbed_stubs = array(
   array(
     'title' => 'NewGrounds',
     'website' => 'http://www.newgrounds.com',
-    'type' => 'other',
     'url-match' => '(http://uploads\.ungrounded\.net/(?:[0-9]{1,12})/(?:[0-9]{1,12})_(?:[0-9a-z_-]*?)\.swf)',
     'embed-src' => '$2?autostart=false&autoplay=false',
     'embed-width' => '480',
@@ -1103,7 +1120,6 @@ $AutoEmbed_stubs = array(
   array(
     'title' => 'Orb',
     'website' => 'http://www.orb.com',
-    'type' => 'other',
     'url-match' => 'http://mycast\.orb\.com/orb/html/qs\?mediumId=([0-9a-z]{8})&(?:amp;)?l=([0-9a-z_-]{1,20})',
     'embed-src' => 'http://mycast.orb.com/orb/resources/common/videoplayer.swf?file=http%3A%2F%2Fmycast.orb.com%2Forb%2Fxml%2Fstream%3FstreamFormat%3Dswf%26mediumId%3D$2%26l%3D$3&showdigits=true&autostart=false&shuffle=false&showeq=true&showfsbutton=true',
     'embed-width' => '439',
@@ -1112,7 +1128,6 @@ $AutoEmbed_stubs = array(
   array(
     'title' => 'Passionato (Single Preview)',
     'website' => 'http://www.passionato.com',
-    'type' => 'audio',
     'url-match' => 'http://(?:www\.)passionato\.com/play/track/([0-9]{1,12})',
     'embed-src' => 'http://www.passionato.com/swf/media.swf?file=http://www.passionato.com%2Fxspf%2Fplay.php%3FTRACK_ID%3D$2&autostart=false&searchbar=false&showeq=false&displayheight=200&height=200&width=420&backcolor=0x000000&frontcolor=0xCC0000&screencolor=0x000000&lightcolor=0xFFD5D5&overstretch=none&thumbsinplaylist=false&autoscroll=false',
     'embed-width' => '420',
@@ -1121,7 +1136,6 @@ $AutoEmbed_stubs = array(
   array(
     'title' => 'Passionato (Playlist Preview)',
     'website' => 'http://www.passionato.com',
-    'type' => 'audio',
     'url-match' => 'http://(?:www\.)passionato\.com/(?:play/)?release/([0-9]{1,12})',
     'embed-src' => 'http://www.passionato.com/swf/media.swf?file=http://www.passionato.com%2Fxspf%2Fplay.php%3FALBUM_ID%3D$2&autostart=false&searchbar=false&showeq=false&displayheight=200&height=400&width=420&backcolor=0x000000&frontcolor=0xCC0000&screencolor=0x000000&lightcolor=0xFFD5D5&overstretch=none&thumbsinplaylist=false&autoscroll=false',
     'embed-width' => '420',
@@ -1146,7 +1160,6 @@ $AutoEmbed_stubs = array(
   array(
     'title' => 'Project Playlist',
     'website' => 'http://www.playlist.com',
-    'type' => 'audio',
     'url-match' => 'http://(?:www\.)?playlist\.com/(?:standalone|node)/([0-9]{1,10})',
     'embed-src' => 'http://www.playlist.com/media/mp3player-standalone.swf?playlist_url=http://www.playlist.com/node/$2/playlist/xspf&config=http://www.musiclist.us/mc/config/config_black.xml&mywidth=435',
     'embed-width' => '435',
@@ -1187,7 +1200,6 @@ $AutoEmbed_stubs = array(
   array(
     'title' => 'ScreenToaster',
     'website' => 'http://www.screentoaster.com',
-    'type' => 'video',
     'url-match' => 'http://(?:www\.)?screentoaster\.com/watch/([0-9a-zA-Z]+)',
     'embed-src' => 'http://www.screentoaster.com/swf/STPlayer.swf?video=$2',
     'embed-width' => '425',
@@ -1197,7 +1209,6 @@ $AutoEmbed_stubs = array(
   array(
     'title' => 'Seeqpod',
     'website' => 'http://www.seeqpod.com',
-    'type' => 'audio',
     'url-match' => 'http://(?:www\.)?seeqpod\.(?:com|net)/search/\?plid=([0-9a-f]{10})',
     'embed-src' => 'http://www.seeqpod.net/cache/seeqpodSlimlineEmbed.swf?domain=http://www.seeqpod.com&playlistXMLPath=http://www.seeqpod.com/api/music/getPlaylist?playlist_id=$2',
     'embed-width' => '300',
@@ -1270,7 +1281,6 @@ $AutoEmbed_stubs = array(
   array(
     'title' => 'Songza',
     'website' => 'http://www.songza.com',
-    'type' => 'audio',
     'url-match' => '(http://(?:www\.)?songza\.com/e/listen\?(?:zName=(?:[0-9a-z_\%-]*?)&(?:amp;)?)?zId=(?:[0-9a-z_-]{16}))',
     'embed-src' => '$2&zAutostart=false&zType=flv',
     'embed-width' => '425',
@@ -1321,6 +1331,15 @@ $AutoEmbed_stubs = array(
     'website' => 'http://www.tm-tube.com',
     'url-match' => 'http://(?:www\.)?tm-tube\.com/video/([0-9]{1,12})/',
     'embed-src' => 'http://www.tm-tube.com/flvplayer.swf?mediaid=$2&hosturl=http://www.tm-tube.com/&themecolor=0x696969&symbolcolor=0xb22222&backgroundcolor=0x000000&autostart=false&loop=false&overlay=http://www.tm-tube.com//media/custom/player_emb.png&&',
+    'embed-width' => '480',
+    'embed-height' => '360',
+  ),
+  array(
+    'title' => 'Todays Big Thing',
+    'website' => 'http://www.todaysbigthing.com',
+    'url-match' => 'http://(?:www|entertainment|sports|technology|music|funnyvideos)\.todaysbigthing\.com/[0-9]{4}(?:/[0-9]{2}){2}',
+    'fetch-match' => 'http://(?:www|entertainment|sports|technology|music|funnyvideos)\.todaysbigthing\.com/betamax/betamax\.internal\.swf\?item_id=([0-9]{1,6})',
+    'embed-src' => 'http://www.todaysbigthing.com/betamax/betamax.swf?item_id=$2&fullscreen=1',
     'embed-width' => '480',
     'embed-height' => '360',
   ),
@@ -1465,7 +1484,6 @@ $AutoEmbed_stubs = array(
   array(
     'title' => 'VoiceThread',
     'website' => 'http://www.voicethread.com',
-    'type' => 'other',
     'url-match' => 'http://(?:www\.)?voicethread\.com/(?:share/|book\.swf\?b=|#q\.b)([0-9]{1,10})',
     'embed-src' => 'http://www.voicethread.com/book.swf?b=$2',
     'embed-width' => '480',
