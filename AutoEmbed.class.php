@@ -206,7 +206,9 @@ class AutoEmbed {
    * Attempt to parse the embed id from a given URL
    */ 
   private function _parseLink($url) {
-    if ( preg_match('~'.$this->_stub['fetch-match'].'~imu', file_get_contents($url), $match) ) {
+    $source = preg_replace('/[^(\x20-\x7F)]*/','', file_get_contents($url));
+
+    if ( preg_match('~'.$this->_stub['fetch-match'].'~imu', $source, $match) ) {
       $this->_media_id = $match;
       $this->_setDefaultParams();
       return true;
