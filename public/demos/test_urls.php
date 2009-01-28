@@ -160,6 +160,7 @@ $verified_urls = array(
   'VSocial (Type1)' => 'http://www.vsocial.com/video/?d=84205',
   'VSocial (Type2)' => 'http://www.vsocial.com/ups/acb6e0ea047ee8f7868f19716b41f8cf',
   'WeGame' => 'http://www.wegame.com/watch/Clarity_Darkspear_VS_Heigan/',
+  'Webshots' => 'http://good-times.webshots.com/slideshow/569712245TaJLlY',
   'Yahoo Video' => 'http://video.yahoo.com/watch/3480170/9682231',
   'Yahoo Video HK' => 'http://hk.video.yahoo.com/video/video.html?id=100322',
   'Yahoo Music Videos' => 'http://new.music.yahoo.com/singleVideo/?vid=29592290',
