@@ -83,6 +83,7 @@ $verified_urls = array(
   'GodTube' => 'http://www.godtube.com/view_video.php?viewkey=9c69d4acc9dd49eaf89f',
   'GotGame' => 'http://video.gotgame.com/index.php/video/view/5346/Mega_Man_3_Review',
   'GrassRoots ItvLocal' => 'http://grassroots.itvlocal.com/Clip.aspx?key=C06D89C1B42F1829',
+  'Guzer' => 'http://www.guzer.com/videos/sandals-glued-to-the-floor.php',
   'TheHub' => 'http://hub.witness.org/en/node/32',
   'Howcast' => 'http://www.howcast.com/videos/43990-How-To-Fit-in-on-Your-First-Day-Of-Work',
   'Hulu (Usa Only)' => 'http://www.hulu.com/watch/53456/saturday-night-live-update-larry-the-goose',

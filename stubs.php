@@ -691,6 +691,15 @@ $AutoEmbed_stubs = array(
     'embed-height' => '480',
   ),
   array(
+    'title' => 'Guzer',
+    'website' => 'http://www.guzer.com',
+    'url-match' => 'http://(?:www\.)?guzer\.com/videos/(.*).php',
+    'embed-src' => 'http://www.guzer.com/player/mediaplayer.swf',
+    'embed-width' => '486',
+    'embed-height' => '382',
+    'flashvars' => 'height=382&amp;width=486&amp;file=http://media.guzer.com/videos/$2.flv&amp;image=http://www.guzer.com/videos/s$2.jpg'
+  ),
+  array(
     'title' => 'TheHub',
     'website' => 'http://hub.witness.org',
     'url-match' => 'http://hub\.witness\.org/(?:en|fr|es)/node/([0-9]{1,10})',
