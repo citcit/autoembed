@@ -1525,6 +1525,15 @@ $AutoEmbed_stubs = array(
     'embed-height' => '387',
   ),
   array(
+    'title' => 'Webshots (Slideshows)',
+    'website' => 'http://www.webshots.com',
+    'url-match' => 'http://[a-z0-9\-_]*\.webshots\.com/slideshow/([a-z0-9]*)',
+    'embed-src' => 'http://p.webshots.com/flash/smallslideshow.swf',
+    'embed-width' => '425',
+    'embed-height' => '384',
+    'flashvars' => 'playList=http%3A%2F%2Fcommunity.webshots.com%2Fslideshow%2Fmeta%2F$2%3Finline%3Dtrue&inlineUrl=http%3A%2F%2Fcommunity.webshots.com%2FinlinePhoto%26src%3Ds%26referPage%3Dhttp%3A%2F%2Fgood-times.webshots.com%2Fslideshow%2F$2&postRollContent=http%3A%2F%2Fp.webshots.com%2Fflash%2Fws_postroll.swf&shareUrl=http%3A%2F%2Fgood-times.webshots.com%2Fslideshow%2F$2&audio=on&audioVolume=33&autoPlay=false&transitionSpeed=5&startIndex=0&panzoom=on&deployed=true',
+  ),
+  array(
     'title' => 'Yahoo Video',
     'website' => 'http://video.yahoo.com',
     'url-match' => 'http://(?:(?:www|uk|fr|it|es|br|au|mx|de|ca)\.)?video\.yahoo\.com/watch/([0-9]{1,12})/([0-9]{1,12})',
