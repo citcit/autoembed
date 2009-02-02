@@ -67,6 +67,17 @@ class AutoEmbed {
   }
 
   /**
+   * Create the embed code for a local file
+   *
+   * @param $file string - the file we are wanting to embed
+   *
+   * @return boolean - whether or not the url contains valid/supported video
+   */
+  public function embedLocal($file) {
+    return $this->parseUrl("__local__$file");
+  }
+
+  /**
    * Returns info about the stub
    *
    * @param string $property - (optional) the specific
