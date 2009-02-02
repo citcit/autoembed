@@ -1591,5 +1591,13 @@ $AutoEmbed_stubs = array(
     'embed-width' => '480',
     'embed-height' => '370',
   ),
+  array(
+    'title' => 'Local Content',
+    'website' => 'localhost',
+    'url-match' => '__local__(.*)',
+    'embed-src' => '$2',
+    'embed-width' => '425',
+    'embed-height' => '344',
+  ),
 );
 ?>

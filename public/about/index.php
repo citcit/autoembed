@@ -19,8 +19,14 @@ to use AutoEmbed in your own projects as a included PHP class.</p>
 <h4>Obtain a new instance of the class</h4>
 <pre>$AE = new AutoEmbed();</pre>
 
-<h4>Parse a url that contains a video</h4>
-<pre>$AE->parseUrl('http://youtube.com/etc/etc');</pre>
+<h4>Load the embed source</h4>
+<pre>
+// load the embed source from a remote url
+$AE->parseUrl('http://youtube.com/etc/etc');
+
+// or load the embed source from a local file
+$AE->embedLocal('/public/flash/awesome-video.flv');
+</pre>
 
 <h4>Inspect the flash vars from the video</h4>
 <pre>var_dump($AE->getFlashParams());</pre>
