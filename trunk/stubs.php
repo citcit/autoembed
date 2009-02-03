@@ -148,14 +148,6 @@ $AutoEmbed_stubs = array(
     'embed-height' => '380',
   ),
   array(
-    'title' => 'ABC News',
-    'website' => 'http://www.abcnews.go.com',
-    'url-match' => 'http://abcnews\.go\.com/video/playerIndex\?id=([0-9]+)',
-    'embed-src' => '/assets/flash/mediaplayer/PremiumPlayer.swf?config=/assets/flash/mediaplayer/config/premium.xml&playlistUrl=/widgets/mediaplayer/premiumPlayerPlaylist?mid=$2&featured=/widgets/mediaplayer/abcnewsFeatured&omniaccount=ABCNewsOmnitureAccount',
-    'embed-width' => '480',
-    'embed-height' => '388',
-  ),
-  array(
     'title' => 'AdultSwim',
     'website' => 'http://www.adultswim.com',
     'url-match' => 'http://www\.adultswim\.com/video/(?:vplayer/index\.html\?id=|\?episodeID=|ASVPlayer\.swf\?id=)([0-9a-f]{32})',
@@ -247,14 +239,6 @@ $AutoEmbed_stubs = array(
     'embed-src' => '$2',
     'embed-width' => '480',
     'embed-height' => '400',
-  ),
-  array(
-    'title' => 'BooMp3',
-    'website' => 'http://www.boomp3.com',
-    'url-match' => 'http://(?:www\.|static\.)?boomp3\.com/(?:listen/|player\.swf\?song=)([0-9a-z_-]{11})',
-    'embed-src' => 'http://static.boomp3.com/player.swf?song=$2&noinfo=1',
-    'embed-width' => '200',
-    'embed-height' => '20',
   ),
   array(
     'title' => 'Break',
@@ -379,14 +363,6 @@ $AutoEmbed_stubs = array(
     'embed-width' => '360',
     'embed-height' => '335',
     'flashvars' => 'playerType=embedded&value=$2',
-  ),
-  array(
-    'title' => 'Cold-Link',
-    'website' => 'http://www.cold-link.com',
-    'url-match' => 'http://(?:www\.)?cold-link\.com/(?:play|vid)/([a-z0-9]{8,12})',
-    'embed-src' => 'http://cold-link.com/vid/$2',
-    'embed-width' => '575',
-    'embed-height' => '400',
   ),
   array(
     'title' => 'CollegeHumor',
@@ -1162,8 +1138,9 @@ $AutoEmbed_stubs = array(
   array(
     'title' => 'Photobucket',
     'website' => 'http://www.photobucket.com',
-    'url-match' => 'http://s(\w{1,5})\.photobucket\.com/albums/((?:(?:[\%0-9a-z_-]{1,50})/){1,10})(?:\?(?:[^"]*?)current=)?([\%0-9a-z_-]{1,50})\.flv',
-    'embed-src' => 'http://www.photobucket.com/player.swf?file=http://vid$2.photobucket.com/albums/$3$4.flv',
+    'url-match' => 'http://media\.photobucket\.com\/video\/.*\/videos',
+    'fetch-match' => '(http://vid[0-9]{1,3}\.photobucket\.com/albums/[a-z0-9]{2,5}/[a-z0-9\-_]*/videos/[a-z0-9\-_]*\.flv)',
+    'embed-src' => 'http://media.photobucket.com/flash/player.swf?file=$2',
     'embed-width' => '448',
     'embed-height' => '361',
   ),
@@ -1441,7 +1418,8 @@ $AutoEmbed_stubs = array(
   array(
     'title' => 'VideoJug',
     'website' => 'http://www.videojug.com',
-    'url-match' => '(http://(?:www\.)videojug\.com/film/player\?id=(?:[0-9a-z]{8})(?:(?:-(?:[0-9a-z]{4})){3})-(?:[0-9a-z]{12}))',
+    'url-match' => 'http://(?:www\.)videojug\.com/film/',
+    'fetch-match' => '(http://(?:www\.)videojug\.com/film/player\?id=(?:[0-9a-z]{8})(?:(?:-(?:[0-9a-z]{4})){3})-(?:[0-9a-z]{12}))',
     'embed-src' => '$2',
     'embed-width' => '400',
     'embed-height' => '345',
