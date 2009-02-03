@@ -7,7 +7,7 @@ include "../includes/header.inc.php";
 <h2>Download the AutoEmbed PHP Class</h2>
 
 <br />
-<p><img src="<?=BASE_URL?>/images/download.png" align="absmiddle" /> <a href="http://autoembed.googlecode.com/files/AutoEmbed-1.1.tar.gz">AutoEmbed-1.1.tar.gz</a> (Released 01/19/09)</p>
+<p><img src="<?=BASE_URL?>/images/download.png" align="absmiddle" /> <a href="http://autoembed.googlecode.com/files/AutoEmbed-1.2.tar.gz">AutoEmbed-1.2.tar.gz</a> (Released 02/03/09)</p>
 
 <p>This software is licensed under the <a href="http://www.gnu.org/licenses/lgpl.txt">GNU Lesser General Public License</a>.</p>
 
