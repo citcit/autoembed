@@ -1,6 +1,6 @@
 <?php
 include "../../AutoEmbed.class.php";
-if (!empty($_GET['url'])) {
+if (isset($_GET['url'])) {
   $AE = new AutoEmbed;
   if (!$AE->parseUrl($_GET['url'])) {
     $embed_code = false;
