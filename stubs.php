@@ -947,7 +947,6 @@ $AutoEmbed_stubs = array(
     'embed-width' => '425',
     'embed-height' => '339',
   ),
-
   array(
     'title' => 'Video.mail.ru',
     'website' => 'http://video.mail.ru',
@@ -959,10 +958,20 @@ $AutoEmbed_stubs = array(
   array(
     'title' => 'MadnessVideo',
     'website' => 'http://www.madnessvideo.net',
-    'url-match' => 'http:\/\/(?:www\.)?madnessvideo\.net\/(.*)',
+    'url-match' => 'http://(?:www\.)?madnessvideo\.net/(.*)',
     'embed-src' => 'http://www.madnessvideo.net/emb.aspx/$2',
     'embed-width' => '400',
     'embed-height' => '320',
+  ),
+  array(
+    'title' => 'MetaTube',
+    'website' => 'http://www.metatube.com',
+    'url-match' => 'http://(?:www\.)?metatube\.com/(?:\?Seccion=Videos|play/[0-9]{1,6})',
+    'fetch-match' => "playVid\('(http://www.metatube.com/uploads/videos/flv/[a-z0-9\-_]*\.flv)','(http://www.metatube.com/uploads/videos/thumbs/[a-z0-9\-_]*\.[a-z]{3})",
+    'embed-src' => 'http://www.metatube.com/flash/player.swf',
+    'embed-width' => '550',
+    'embed-height' => '350',
+    'flashvars' => 'origSize=false&imagePath=http://www.metatube.com/uploads/videos/thumbs/pic_1223481971.jpg&videoPath=http://www.metatube.com/uploads/videos/flv/Bird_Is_The_Word.flv&autoStart=false&volAudio=40',
   ),
   array(
     'title' => 'Milliyet',
