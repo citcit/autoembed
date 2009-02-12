@@ -1,6 +1,17 @@
 Version 1.2
 -----------
 API
+- Added function setObjectAttrib which will allow
+for setting specific attributes on the embeded object
+
+Stubs
+- Added support for sites
+    MetaCafe
+
+
+Version 1.2
+-----------
+API
 - Added ability to embed local content
 - Strip out all non-ascii chars from the source of a
 fetched url to help preg_match. 
