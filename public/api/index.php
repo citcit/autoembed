@@ -1,13 +1,12 @@
 <?php
 include "../../AutoEmbed.class.php";
+
 if (isset($_GET['url'])) {
   $AE = new AutoEmbed;
-  if (!$AE->parseUrl($_GET['url'])) {
-    $embed_code = false;
-  } else {
+  if ($AE->parseUrl($_GET['url'])) {
     $embed_code = $AE->getEmbedCode();
-  }
-  if (@$_GET['fmt']=='raw') die($embed_code);
+  }    
+  if ($_GET['demo']!='1') die($embed_code);
 }
 
 $api_current = "current";
@@ -23,8 +22,8 @@ include "../includes/header.inc.php";
     <input type="text" id="url" size="60" name="url" value="<?=$_GET['url']?>" class="text" onClick="this.select();" />
     <input type="submit" value="Get Embed Code" class="button" /><br />
     <b>Format:</b>
-    <label><input type="radio" name="fmt" value="web" checked="true" /> Web Demonstration</label>
-    <label><input type="radio" name="fmt" value="raw" /> Raw HTML Only</label>
+    <label><input type="radio" name="demo" value="1" checked="true" /> Web Demonstration</label>
+    <label><input type="radio" name="demo" value="0" /> Raw HTML Only</label>
   </form>
 </div>
 
