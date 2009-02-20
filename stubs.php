@@ -67,14 +67,6 @@ $AutoEmbed_stubs = array(
     'embed-width' => '400',
     'embed-height' => '326',
   ),
-  array(
-    'title' => 'BBC News (UK Only)',
-    'website' => 'http://www.bbc.co.uk/',
-    'url-match' => '(http://news.bbc.co.uk/[^"]*?/([0-9]{6,9})\.(?:xml|stm))',
-    'embed-src' => 'http://news.bbc.co.uk/player/emp/2_5_4735/player.swf?id=embeddedPlayer_$3&config=http://news.bbc.co.uk/player/emp/config/default.xml?v10&playlist=$2',
-    'embed-width' => '512',
-    'embed-height' => '323',
-  ),
   array(    
     'title' => 'BBC Iplayer (UK Only)',
     'website' => 'http://www.bbc.co.uk/iplayer',
