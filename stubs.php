@@ -762,7 +762,7 @@ $AutoEmbed_stubs = array(
   array(
     'title' => 'ImageShack',
     'website' => 'http://www.imageshack.us',
-    'url-match' => 'http://img([0-9]{1,5})\.imageshack\.us/(?:my\.php\?image=|img(?:[0-9]{1,5})/(?:[0-9]{1,8})/|flvplayer\.swf\?f=T)([a-z0-9-_]{1,20})\.flv',
+    'url-match' => 'http://img([0-9]{1,5})\.imageshack\.us/img[0-9]{1,5}/[0-9]{1,7}/([a-z0-9-_]{1,28})\.(?:flv|swf)',
     'embed-src' => 'http://img$2.imageshack.us/flvplayer.swf?f=T$3&autostart=false',
     'embed-width' => '424',
     'embed-height' => '338',
@@ -1324,6 +1324,15 @@ $AutoEmbed_stubs = array(
     'embed-width' => '334',
     'embed-height' => '326',
     'flashvars' => 'vu=http://video.ted.com/talks/embed/$2-embed_high.flv&su=http://images.ted.com/images/ted/tedindex/embed-posters/$2.embed_thumbnail.jpg&vw=320&vh=240&ap=0',
+  ),
+  array(
+    'title' => 'The Onion',
+    'website' => 'http://www.theonion.com',
+    'url-match' => 'http://(?:www\.)?theonion\.com/content/video/.*',
+    'fetch-match' => 'videoid\s?=\s?"([0-9]{2,7})";.*var image_url\s?=\s?escape\("([^"]*)"',
+    'embed-src' => 'http://www.theonion.com/content/themes/common/assets/onn_embed/embedded_player.swf?image=$3&amp;videoid=$2',
+    'embed-width' => '480',
+    'embed-height' => '430',
   ),
   array(
     'title' => 'TinyPic',
