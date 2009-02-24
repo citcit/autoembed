@@ -146,6 +146,7 @@ $verified_urls = array(
   'Streetfire' => 'http://videos.streetfire.net/video/Skyline-GTR-launch-0-320_197665.htm',
   'TagTele' => 'http://www.tagtele.com/videos/voir/31022',
   'Ted.com' => 'http://www.ted.com/index.php/talks/joseph_pine_on_what_consumers_want.html',
+  'The Onion' => 'http://www.theonion.com/content/video/majority_of_world_s_spam_email',
   'TinyPic' => 'http://tinypic.com/player.php?v=dgqv6u&s=5',
   'Tm-Tube' => 'http://www.tm-tube.com/video/5325/shortmaps---mc-t35---00-05--97--',
   'Todays Big Thing' => 'http://technology.todaysbigthing.com/2009/01/26',
