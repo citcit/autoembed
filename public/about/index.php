@@ -9,7 +9,7 @@ include "../includes/header.inc.php";
 <p><em>AutoEmbed</em> is available as a 
 <a href="<?=BASE_URL?>/api/">web service</a> for performing <em>URL to Embedded Video</em> conversions, 
 as well as a <a href="<?=BASE_URL?>/download/">downloadable PHP class</a>.  This tutorial shows how
-to use AutoEmbed in your own projects as a included PHP class.</p>
+to use AutoEmbed in your own projects as a included PHP class.  If you're interested in using AutoEmbed with another language, check out our <a href="<?=BASE_URL?>/about/ruby_api_example.php">web API usage example in Ruby</a> for use with your Rails projects.</p>
 
 <h3>Quick Synopsis</h3>
 <h4>Include the AutoEmbed class file</h4>

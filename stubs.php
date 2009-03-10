@@ -1402,6 +1402,15 @@ $AutoEmbed_stubs = array(
     'embed-height' => '300',
   ),
   array(
+    'title' => 'Tumblr (Music)',
+    'website' => 'http://www.tumblr.com',
+    'url-match' => 'http://[a-z0-9-_]{2,30}\.tumblr\.com/post/[0-9]{3,10}/',
+    'fetch-match' => '<embed type="application/x-shockwave-flash" src="(http://[a-z0-9-_./]*\?audio_file=http://www\.tumblr\.com/audio_file/[0-9]{5,8}/[a-z0-9]{24})',
+    'embed-src' => '$2&amp;color=e4e4e4',
+    'embed-width' => '207',
+    'embed-height' => '27',
+  ),
+  array(
     'title' => 'UOL VideoLog',
     'website' => 'http://videolog.uol.com.br',
     'url-match' => 'http://videolog\.uol\.com\.br/video(?:\?|\.php\?id=)([0-9]{1,9})',
