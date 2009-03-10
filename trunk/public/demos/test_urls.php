@@ -153,6 +153,7 @@ $verified_urls = array(
   'TrailerAddict' => 'http://www.traileraddict.com/trailer/black-dynamite/trailer',
   'Trilulilu' => 'http://www.trilulilu.ro/semaca/97de5b59225709',
   'Tudou' => 'http://www.tudou.com/programs/view/yf8AfkGC60o/',
+  'Tumblr (Music)' => 'http://tuneage.tumblr.com/post/83775962/blu-wake-up-show-freestyle',
   'UOL VideoLog' => 'http://videolog.uol.com.br/video.php?id=400093',
   'UUME' => 'http://pic.uume.com/play_rLskkin8EYmI.html',
   'u-Tube' => 'http://www.u-tube.ru/pages/video/23495/',
