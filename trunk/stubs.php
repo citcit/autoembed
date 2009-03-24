@@ -67,14 +67,6 @@ $AutoEmbed_stubs = array(
     'embed-width' => '400',
     'embed-height' => '326',
   ),
-  array(    
-    'title' => 'BBC Iplayer (UK Only)',
-    'website' => 'http://www.bbc.co.uk/iplayer',
-    'url-match' => 'http://(?:www\.)?bbc\.co\.uk/iplayer/(?:page/item|episode)/([a-z0-9]{8})(?:\.shtml|/)',
-    'embed-src' => 'http://www.bbc.co.uk/emp/player.swf?playlist=http://www.bbc.co.uk/iplayer/playlist/$2&config=http://www.bbc.co.uk/emp/iplayer/config.xml&domId=emp1',
-    'embed-width' => '640',
-    'embed-height' => '385',
-  ),
   array(
     'title' => 'MegaVideo',
     'website' => 'http://www.megavideo.com',
