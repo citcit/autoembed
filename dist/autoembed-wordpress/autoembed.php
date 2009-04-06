@@ -2,7 +2,7 @@
 /*
 Plugin Name: AutoEmbed
 Plugin URI: http://www.autoembed.com/download/
-Description: Plugin to embed videos from over 150 video sites
+Description: Embed videos from over 150 supported video sites using AutoEmbed.com Web API
 Date: 04/01/2009
 Author: Jason Hines
 Author URI: http://devtwo.com
