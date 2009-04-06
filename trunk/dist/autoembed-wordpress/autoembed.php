@@ -20,7 +20,8 @@ function autoembed_content($content) {
   preg_match_all('/\[embed:(.*?)]/i', $content, $matches);
   for($i=0;$i<count($matches[0]);$i++) {
     $url = $matches[1][$i];
-    $replace = file_get_contents("http://autoembed.com/api/?url={$url}&fmt=raw");
+    $replace = file_get_contents("http://autoembed.com/api/?fmt=raw&url=".urlencode($url));
+    if (empty($replace)) $replace = "<a href=\"{$url}\" target=\"new\">{$url}</a>";
     $content = str_replace($matches[0][$i], $replace, $content);
   }
   return $content;
