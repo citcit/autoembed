@@ -45,10 +45,10 @@ include "../includes/header.inc.php";
 <br />
 <h3>Try a Few Examples</h3>
 <ul>
-  <li><a href="<?=BASE_URL?>/api/?url=http://www.youtube.com/watch?v=tGEz31RA4es">YouTube</a></li>
-  <li><a href="<?=BASE_URL?>/api/?url=http://www.metacafe.com/watch/1669953/the_transporter_3/">MetaCafe</a></li>
-  <li><a href="<?=BASE_URL?>/api/?url=http://www.dailymotion.com/video/x5z2ym_jolcats_fun">DailyMotion</a></li>
-  <li><a href="<?=BASE_URL?>/api/?url=http://www.vimeo.com/2398561">Vimeo</a></li>
+  <li><a href="<?=BASE_URL?>/api/?demo=1&url=http://www.youtube.com/watch?v=tGEz31RA4es">YouTube</a></li>
+  <li><a href="<?=BASE_URL?>/api/?demo=1&url=http://www.metacafe.com/watch/1669953/the_transporter_3/">MetaCafe</a></li>
+  <li><a href="<?=BASE_URL?>/api/?demo=1&url=http://www.dailymotion.com/video/x5z2ym_jolcats_fun">DailyMotion</a></li>
+  <li><a href="<?=BASE_URL?>/api/?demo=1&url=http://www.vimeo.com/2398561">Vimeo</a></li>
 </ul>
 
 <br />
