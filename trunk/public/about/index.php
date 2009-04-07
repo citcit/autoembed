@@ -60,7 +60,7 @@ needed when using the API remotely.</p>
   <h4>Send the escaped URL to the AutoEmbed API</h4>
 <pre>
 url = CGI.escape 'http://videoworld.com/Ahg6qcgoay4'
-embed = open("http://autoembed.com/api/?url=#{url}&fmt=raw").read
+embed = open("http://autoembed.com/api/?url=#{url}").read
 </pre>
 
   <h4>Check to see if any embed code was returned</h4>
@@ -77,7 +77,7 @@ end
   <h4>Parse a new URL, rinse and repeat as needed</h4>
 <pre>
 url = CGI.escape 'http://newvideo.com/lolz'
-embed = open("http://autoembed.com/api/?url=#{url}&fmt=raw").read
+embed = open("http://autoembed.com/api/?url=#{url}").read
 </pre>
 </div>
 
