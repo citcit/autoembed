@@ -42,6 +42,7 @@ $AutoEmbed_stubs = array(
     'embed-src' => 'http://www.youtube.com/v/$2&rel=0&fs=1',
     'embed-width' => '425',
     'embed-height' => '344',
+    'image-src' => 'http://img.youtube.com/vi/$2/0.jpg'
   ),
   array(
     'title' => 'YouTube (Playlists)',
@@ -58,6 +59,7 @@ $AutoEmbed_stubs = array(
     'embed-src' => 'http://www.dailymotion.com/swf/$2&related=0',
     'embed-width' => '480',
     'embed-height' => '300',
+    'image-src' => 'http://www.dailymotion.com/thumbnail/160x120/video/$2',
   ),
   array(
     'title' => 'Google Video',
@@ -223,6 +225,16 @@ $AutoEmbed_stubs = array(
     'embed-src' => '$2',
     'embed-width' => '480',
     'embed-height' => '400',
+  ),
+  array(
+    'title' => 'Bored',
+    'website' => 'http://bored.com/',
+    'url-match' => 'http://(?:www\.)?bored\.com/videos/play/[0-9]{1,5}/',
+    'fetch-match' => 'publisherID:\ *([0-9]{1,5}),\ *token:\ *"([a-f0-9]{20})".*showvideo.php\?id=([0-9]{2,5})',
+    'embed-src' => 'http://static.adreel.tv/players/flowplayer/FlowPlayerDark.swf',
+    'embed-width' => '500',
+    'embed-height' => '403',
+    'flashvars' => "adreel={'publisherID':$2,'token':'$3'}&amp;config={'autoPlay':false,'autoBuffering':true,'initialScale':'scale','controlBarBackgroundColor':'0','videoFile':'http://bored.com/showvideo.php?id=$4'}",
   ),
   array(
     'title' => 'Break',

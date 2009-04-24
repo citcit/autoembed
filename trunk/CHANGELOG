@@ -1,68 +1,76 @@
 Version 1.3
 -----------
 API
-- Added function setObjectAttrib which will allow
-for setting specific attributes on the embeded object
+  - Added thumbnail support
+  - Added function setObjectAttrib which will allow
+  for setting specific attributes on the embeded object
 
 Stubs
-- Added support for sites
+  - Added support for sites
+    Bored
     MetaCafe
     The Onion Video
     Tumblr (Music)
 
-- Removed
+  - Removed
     BBC News
+
+Thumbnail
+  - Added support for sites
+    Youtube
+    Dailymotion
+
 
 
 Version 1.2
 -----------
 API
-- Added ability to embed local content
-- Strip out all non-ascii chars from the source of a
-fetched url to help preg_match. 
+  - Added ability to embed local content
+  - Strip out all non-ascii chars from the source of a
+  fetched url to help preg_match. 
 
 Stubs
-- Added support for sites
-     BoingBoing TV
-     Blastro
-     Today's Big Thing
-     Ted.com
-     Streetfire
-     Webshots (Slideshows)
-     Fandome
-     Photobucket
-     VideoJug
+  - Added support for sites
+    BoingBoing TV
+    Blastro
+    Today's Big Thing
+    Ted.com
+    Streetfire
+    Webshots (Slideshows)
+    Fandome
+    Photobucket
+    VideoJug
 
-- Removed
-     ABC News (not able to embed)
-     PikNikTube (site no longer exists)
-     Cold-Link (not able to embed)
-     Boomp3 (not able to embed)
+  - Removed
+    ABC News (not able to embed)
+    PikNikTube (site no longer exists)
+    Cold-Link (not able to embed)
+    Boomp3 (not able to embed)
 
 Version 1.1
 -----------
 API
-- Added support for parsing HTML of URLs to create embed code for sites
-that we are unable to create from a URL alone.
+  - Added support for parsing HTML of URLs to create embed code for sites
+  that we are unable to create from a URL alone.
 
 Stubs
-- Added support for sites
-     Hulu 
-     CBS News
-     CNet TV
-     MSNBC
-     EbaumsWorld
-     Break
-     TrailerAddict
-     Atom 
-     Imeem (Music, Videos and Playlists)
-     Glumbert
-     BoFunk
-     Flickr Video
-     iReport
+  - Added support for sites
+    Hulu 
+    CBS News
+    CNet TV
+    MSNBC
+    EbaumsWorld
+    Break
+    TrailerAddict
+    Atom 
+    Imeem (Music, Videos and Playlists)
+    Glumbert
+    BoFunk
+    Flickr Video
+    iReport
 
-- Correct stub
-     Blip
+  - Correct stub
+    Blip
 
 
 Version 1.0

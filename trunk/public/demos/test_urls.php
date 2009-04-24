@@ -42,6 +42,7 @@ $verified_urls = array(
   'Blip' => 'http://blip.tv/file/1642545/',
   'BoFunk' => 'http://www.bofunk.com/video/2986/fruitcake_lady.html',
   'BoingBoing TV' => 'http://tv.boingboing.net/2008/12/30/boing-boing-tv-best-1.html',
+  'Bored' => 'http://bored.com/videos/play/214/The-Toilet-Prank.html',
   'Brightcove.com' => 'http://link.brightcove.com/services/link/bcpid1640183817/bctid1747278475',
   'Break' => 'http://www.break.com/usercontent/2008/3/cat-472832.html',
   'CarPix Tv' => 'http://carpixtv.vidiac.com/video/a5e36052-2646-441d-b6a3-9b8700b5edb0.htm',

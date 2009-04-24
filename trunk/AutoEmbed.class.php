@@ -115,10 +115,27 @@ class AutoEmbed {
   /**
    * Convert the url to an embedable tag
    *
-   * returns string - the embed html
+   * return string - the embed html
    */
   public function getEmbedCode() {
     return $this->_buildObject();
+  }
+
+  /**
+   * Return a thumbnail for the embeded video
+   *
+   * return string - the thumbnail href
+   */
+  public function getImageURL() {
+    if (!isset($this->_stub['image-src'])) return false;
+
+    $thumb = $this->_stub['image-src'];
+
+    for ($i=1; $i<=count($this->_media_id); $i++) {
+      $thumb = str_ireplace('$'.$i, $this->_media_id[$i - 1], $thumb);
+    }
+
+    return $thumb;
   }
 
   /**
