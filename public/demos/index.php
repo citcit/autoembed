@@ -50,6 +50,13 @@ direct inquires to the <a href="http://groups.google.com/group/autoembed/">AutoE
       <h4>Embedded Media</h4>
       <?=$embed_tag?>
       <br /><br />
+
+      <? if ($image = $ae->getImageURL()) { ?>
+      <h4>Image</h4>
+        <img src="<?=$image?>">
+      <br /><br />
+      <? } ?>
+
       <h4>Embed Code</h4>
       <textarea style="width:100%;" rows="10"><?=htmlspecialchars($embed_tag)?></textarea>
       <br /><br />      
