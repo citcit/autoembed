@@ -12,14 +12,14 @@ to interface with AutoEmbed in your own projects.</p>
 <h2>PHP Class Example</h2>
 
 <div class="box">
-  <h4>Include the AutoEmbed class file</h4>
+	<h4>Include the AutoEmbed class file</h4>
+	
+	<pre>include "/path/to/libraries/AutoEmbed.class.php";</pre>
+	
+	<h4>Obtain a new instance of the class</h4>
+	<pre>$AE = new AutoEmbed();</pre>
 
-  <pre>include "/path/to/libraries/AutoEmbed.class.php";</pre>
-
-  <h4>Obtain a new instance of the class</h4>
-  <pre>$AE = new AutoEmbed();</pre>
-
-  <h4>Load the embed source</h4>
+	<h4>Load the embed source</h4>
 <pre>
 // load the embed source from a remote url
 $AE->parseUrl('http://youtube.com/etc/etc');
@@ -28,13 +28,20 @@ $AE->parseUrl('http://youtube.com/etc/etc');
 $AE->embedLocal('/public/flash/awesome-video.flv');
 </pre>
 
-  <h4>Inspect the flash vars from the video</h4>
-  <pre>var_dump($AE->getFlashParams());</pre>
+	<h4>Load the embedded media's image (if available)</h4>
+<pre>
+if ($imageURL = $AE->getImageURL()) { ?>
+  print '&lt;img src="' . $imageURL . '" /&gt;';
+}
+</pre>
 
-  <h4>Inspect the object params too</h4>
-  <pre>var_dump($AR->getObjectParams());</pre>
+	<h4>Inspect the flash vars from the video</h4>
+	<pre>var_dump($AE->getFlashParams());</pre>
+	
+	<h4>Inspect the object params too</h4>
+	<pre>var_dump($AR->getObjectParams());</pre>
 
-  <h4>Let's change some parameters to suit our needs</h4>
+	<h4>Let's change some parameters to suit our needs</h4>
 <pre>
 $AE->setParam('wmode','transparent');
 $AE->setParam('autoplay','false');
@@ -48,7 +55,9 @@ $AE->setParam('autoplay','false');
 
   <h4>Parse a new URL, rinse and repeat as needed</h4>
   <pre>$AR->parseUrl('http://videoplace.net/newvideo');</pre>
+
 </div>
+
 <br />
 
 <h2>Web API Example</h2>
