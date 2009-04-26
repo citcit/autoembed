@@ -14,7 +14,7 @@ fi
 PDIR="wp-autoembed.$1"
 PFILE="wp-autoembed.$1.zip"
 
-echo "Preparing for version $1 release ..."
+echo "Preparing for AutoEmbed WordPress Plugin version $1 release ..."
 mkdir $PDIR
 cp ../dist/autoembed-wordpress/autoembed.php $PDIR
 cp ../dist/autoembed-wordpress/licence.txt $PDIR
