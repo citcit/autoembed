@@ -4,17 +4,17 @@ $title = "Download";
 include "../includes/header.inc.php";
 ?>
 
-<h2>Download the AutoEmbed PHP Class</h2>
+<h2>AutoEmbed Downloads</h2>
 
 <br />
-<p><img src="<?=BASE_URL?>/images/download.png" align="absmiddle" /> <a href="http://autoembed.googlecode.com/files/AutoEmbed-1.3.tar.gz">AutoEmbed-1.3.tar.gz</a> (Released 04/25/09)</p>
+<p><img src="<?=BASE_URL?>/images/download.png" align="absmiddle" /> <a href="http://autoembed.googlecode.com/files/AutoEmbed-1.3.tar.gz">AutoEmbed PHP Class</a> (1.3 Released 04/25/09)</p>
 
-<p>This software is licensed under the <a href="http://www.gnu.org/licenses/lgpl.txt">GNU Lesser General Public License</a>.</p>
+<p><img src="<?=BASE_URL?>/images/download.png" align="absmiddle" /> <a href="http://autoembed.googlecode.com/files/wp-autoembed.1.0.zip">AutoEmbed WordPress Plugin</a> (1.0 Released 4/26/09)</p>
 
 <p><em>AutoEmbed</em> is the product of collaborative development between
-<em>Corey Wilson</em> of
-<br/><a target="_new" href="http://2catdesigns.com">2catdesigns</a>
+<em>Corey Wilson</em> of <a target="_new" href="http://2catdesigns.com">2catdesigns</a>
 and <em>Jason Hines</em> of <a target="_new" href="http://devtwo.com/">DevTwo Software</a>.</p>
+<p>AutoEmbed is licensed under the <a href="http://www.gnu.org/licenses/lgpl.txt">GNU Lesser General Public License</a>.</p>
 
 <div class="box">
   <div style="float:left;width:70%;">
