@@ -14,7 +14,7 @@ fi
 PDIR="AutoEmbed-$1"
 PFILE="AutoEmbed-$1.tar.gz"
 
-echo "Preparing for version $1 release ..."
+echo "Preparing for AutoEmbed version $1 release ..."
 mkdir $PDIR
 cp ../AutoEmbed.class.php $PDIR
 cp ../LICENSE $PDIR
