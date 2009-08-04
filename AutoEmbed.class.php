@@ -37,7 +37,7 @@ class AutoEmbed {
    */
   public function __construct() {
     global $AutoEmbed_stubs;
-
+    
     include_once 'stubs.php';
   }
 
@@ -284,6 +284,8 @@ class AutoEmbed {
    */
   private function _buildObject() {
 
+    $object_attribs = $object_params = $flash_params = '';
+
     foreach ($this->_object_attribs as $param => $value) {
       $object_attribs .= '  ' . $param . '="' . $value . '"';    
     }
@@ -306,8 +308,8 @@ class AutoEmbed {
    */
   private function _setDefaultParams() {
 
-    $flashvars = $this->_stub['flashvars'];
     $source = $this->_stub['embed-src'];
+    $flashvars = (isset($this->_stub['flashvars']))? $this->_stub['flashvars'] : null;
 
     for ($i=1; $i<=count($this->_media_id); $i++) {
       $source = str_ireplace('$'.$i, $this->_media_id[$i - 1], $source);
