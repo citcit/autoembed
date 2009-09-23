@@ -19,20 +19,21 @@ to interface with AutoEmbed in your own projects.</p>
 	<h4>Obtain a new instance of the class</h4>
 	<pre>$AE = new AutoEmbed();</pre>
 
-	<h4>Load the embed source</h4>
+	<h4>Parse any URL that contains a video on the page</h4>
 <pre>
 // load the embed source from a remote url
-$AE->parseUrl('http://youtube.com/etc/etc');
+$AE->parseUrl('http://www.youtube.com/watch?v=ikTxfIDYx6Q');
 
-// or load the embed source from a local file
+// or alternatively, load the embed source from a local FLV file
 $AE->embedLocal('/public/flash/awesome-video.flv');
 </pre>
 
-	<h4>Load the embedded media's image (if available)</h4>
+	<h4>Set the embedded media's image (if available)</h4>
 <pre>
-if ($imageURL = $AE->getImageURL()) { ?>
-  print '&lt;img src="' . $imageURL . '" /&gt;';
-}
+// PHP
+$imageURL = $AE->getImageURL();
+// HTML
+&lt;img src="&lt;?=$imageURL?&gt;" /&gt;
 </pre>
 
 	<h4>Inspect the flash vars from the video</h4>
