@@ -39,7 +39,6 @@ on a website.</p>
 <a href="http://bliptv.com"><img alt="Bliptv" class="logo" height="40" src="<?=BASE_URL?>/images/logos/bliptv.png" /></a> 
 <a href="http://break.com"><img alt="Break" class="logo" height="40" src="<?=BASE_URL?>/images/logos/break.png" /></a> 
 <a href="http://spike.com"><img alt="Spike" class="logo" height="40" src="<?=BASE_URL?>/images/logos/spike.png" /></a> 
-<a href="http://veoh.com"><img alt="Veoh" class="logo" height="40" src="<?=BASE_URL?>/images/logos/veoh.png" /></a> 
 <a href="http://imeem.com"><img alt="Imeem" class="logo" src="<?=BASE_URL?>/images/logos/imeem.png" /></a> 
 </div>
 
