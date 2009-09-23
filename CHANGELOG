@@ -1,7 +1,6 @@
 Version 1.4
 -----------
 API
-  - Added support for embeding image urls
   - Removed all PHP warnings
 
 Stubs
