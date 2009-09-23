@@ -8,7 +8,7 @@ include "../includes/header.inc.php";
 
 <p>AutoEmbed is available for download in a few different varieties:</p>
 
-<p><img src="<?=BASE_URL?>/images/download.png" align="absmiddle" /> <a href="http://autoembed.googlecode.com/files/AutoEmbed-1.3.tar.gz">AutoEmbed PHP Class</a> (1.3 Released 04/25/09)</p>
+<p><img src="<?=BASE_URL?>/images/download.png" align="absmiddle" /> <a href="http://autoembed.googlecode.com/files/AutoEmbed-1.4.tar.gz">AutoEmbed PHP Class</a> (1.4 Released 9/23/09)</p>
 
 <p><img src="<?=BASE_URL?>/images/download.png" align="absmiddle" /> <a href="http://autoembed.googlecode.com/files/wp-autoembed.1.0.zip">AutoEmbed WordPress Plugin</a> (1.0 Released 4/26/09)</p>
 
