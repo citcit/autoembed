@@ -1023,6 +1023,14 @@ $AutoEmbed_stubs = array(
     'embed-html-after' => '<br />$2</div>', // Since it justs a button we're making a box for it.
   ),
   array(
+    'title' => 'MP3 Audio',
+    'website' => '',
+    'url-match' => 'http://([^"\'\`\<\>\@\*\$]*?)\.mp3',
+    'embed-src' => 'http://www.google.com/reader/ui/3247397568-audio-player.swf?audioUrl=$1',
+    'embed-width' => '400',
+    'embed-height' => '27',
+  ),
+  array(
     'title' => 'MyNet',
     'website' => 'http://video.eksenim.mynet.com/',
     'url-match' => 'http://video\.eksenim\.mynet\.com/(?:[0-9a-z_-]*?)/(?:[0-9a-z_-]*?)/([0-9]{1,12})/',
