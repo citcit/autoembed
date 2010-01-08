@@ -22,7 +22,7 @@
  */
 
 $verified_urls = array(
-  'Image' => 'http://blog.taragana.com/n/wp-content/uploads/2009/09/six-flags-under-water.jpg',
+  'MP3 Audio' => 'http://www.babygorilla.com/warehouse/art/isolation/NPRBreathing.mp3',
   'YouTube' => 'http://www.youtube.com/watch?v=z3U0udLH974',
   'YouTube (Playlists)' => 'http://www.youtube.com/watch?v=twvzm27TB4I&feature=PlayList&p=595A40209CB17411&index=0&playnext=1',
   'Dailymotion' => 'http://www.dailymotion.com/relevance/search/cats/video/x6ycl8_stalking-cat_fun',
