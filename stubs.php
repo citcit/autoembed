@@ -235,7 +235,7 @@ $AutoEmbed_stubs = array(
     'fetch-match' => 'http://embed\.break\.com/([0-9a-z]{1,8})',
     'embed-src' => '$1',
     'embed-width' => '464',
-    'embed-height' => '392',
+    'embed-height' => '383',
   ),
   array(
     'title' => 'Brightcove.com',
