@@ -464,10 +464,10 @@ $AutoEmbed_stubs = array(
     'title' => 'Fandome',
     'website' => 'http://www.fandome.com',
     'url-match' => 'http://[a-z]*\.fandome\.com/video/([0-9]{3,6})/[a-z0-9\-_]*/',
-    'embed-src' => 'http://www.fandome.com/flashplayer/sportsbox.swf',
+    'embed-src' => 'http://www.kaltura.com/index.php/kwidget/wid/_35168/uiconf_id/1070752',
     'embed-width' => '480',
     'embed-height' => '380',
-    'flashvars' => 'volume=100&stretching=exactfit&autostart=true&backcolor=B10B3A&frontcolor=FFFFFF&state=BUFFERING&lightcolor=FFFFFF&logo=http%3A%2F%2Fwww.fandome.com%2Fimg%2Fwatermark.png&image=http%3A%2F%2Fs3.amazonaws.com%2Flazyimg%2F$2.jpg&link=$1&file=http%3A%2F%2Fs3.amazonaws.com%2Flazyjock%2F$2.flv&plugins=yourlytics-1,quickkeys-1,googlytics-1,viral-1',
+    'flashvars' => 'entryId=http://s3.amazonaws.com/lazyjock/$2.flv&amp;autoplay=false',
   ),
   array(
     'title' => 'Flickr',
@@ -787,7 +787,7 @@ $AutoEmbed_stubs = array(
     'embed-src' => 'http://cdn.last.fm/videoplayer/l/17/VideoPlayer.swf',
     'embed-width' => '340',
     'embed-height' => '289',
-    'flashvars' => 'uniqueName=$3&amp;autostart=true&amp;FSSupport=true'
+    'flashvars' => 'uniqueName=$3&amp;autostart=false&amp;FSSupport=true&amp;autoplay=false'
   ),
   array(
     'title' => 'Libero',

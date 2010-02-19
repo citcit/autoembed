@@ -27,8 +27,6 @@ class AutoEmbed {
   private $_stub;
   private $_object_attribs;
   private $_object_params;
-  private $_flash_params;
-
 
   /**
    * AutoEmbed Constructor
@@ -95,15 +93,6 @@ class AutoEmbed {
   }
 
   /**
-   * Return params about the video metadata
-   *
-   * @return array - video metadata
-   */
-  public function getFlashParams() {
-    return $this->_flash_params;
-  }
-
-  /**
    * Return object params about the video metadata
    *
    * @return array - object params
@@ -147,8 +136,7 @@ class AutoEmbed {
    *                   if parseURL hasn't been called yet
    */
   public function setHeight($height) {
-    return $this->setObjectAttrib('height', $height) && 
-           $this->setFlashParam('height', $height);
+    return $this->setObjectAttrib('height', $height);
   }
 
   /**
@@ -160,9 +148,7 @@ class AutoEmbed {
    *                   if parseURL hasn't been called yet
    */
   public function setWidth($width) {
-    return $this->setObjectAttrib('width', $width) &&
-           $this->setFlashParam('width', $width);
-
+    return $this->setObjectAttrib('width', $width);
   }
 
   /**
@@ -178,11 +164,7 @@ class AutoEmbed {
    *                   if parseURL hasn't been called yet
    */
   public function setParam($param, $value = null) {
-    if ( !$this->setObjectParam($param, $value) ) {
-      return false;
-    }
-
-    return $this->setFlashParam($param, $value);
+    return $this->setObjectParam($param, $value);
   }
 
   /**
@@ -238,33 +220,6 @@ class AutoEmbed {
   }
 
   /**
-   * Override a default flash param value
-   *
-   * @param $param mixed - the name of the param to be set
-   *                       or an array of multiple params to set
-   * @param $value string - (optional) the value to set the param to
-   *                        if only one param is being set
-   *
-   * @return boolean - true if the value was set, false
-   *                   if parseURL hasn't been called yet
-   */
-  public function setFlashParam($param, $value = null) {
-    if (!is_array($this->_flash_params)) return false;
-
-    if ( is_array($param) ) {
-      foreach ($param as $p => $v) {
-        $this->_flash_params[$p] = $v;
-      }
-
-    } else {
-      $this->_flash_params[$param] = $value;
-    }
-
-    return true;
-  }
-
-
-  /**
    * Attempt to parse the embed id from a given URL
    */ 
   private function _parseLink($url) {
@@ -284,7 +239,7 @@ class AutoEmbed {
    */
   private function _buildObject() {
 
-    $object_attribs = $object_params = $flash_params = '';
+    $object_attribs = $object_params = '';
 
     foreach ($this->_object_attribs as $param => $value) {
       $object_attribs .= '  ' . $param . '="' . $value . '"';    
@@ -292,10 +247,6 @@ class AutoEmbed {
 
     foreach ($this->_object_params as $param => $value) {
       $object_params .= '<param name="' . $param . '" value="' . $value . '" />';
-    }
-
-    foreach ($this->_flash_params as $param => $value) {
-      $flash_params .= '  ' . $param . '="' . $value . '"';    
     }
 
     return sprintf("<object %s> %s  %s</object>", $object_attribs, $object_params, self::AE_TAG);
@@ -316,25 +267,8 @@ class AutoEmbed {
       $flashvars = str_ireplace('$'.$i, $this->_media_id[$i - 1], $flashvars);
     }
 
-    //$source = str_replace('&', '&amp;', $source);
-    //$flashvars = str_replace('&', '&amp;', $flashvars);
     $source = htmlspecialchars($source, ENT_QUOTES, null, false);
     $flashvars = htmlspecialchars($flashvars, ENT_QUOTES, null, false);
-
-    $this->_flash_params = array(
-            'type' => 'application/x-shockwave-flash',
-            'src' => $source,
-            'width' => $this->_stub['embed-width'],
-            'height' => $this->_stub['embed-height'],
-            'wmode' => 'transparent',
-            'quality' => 'high',
-            'allowFullScreen' => 'true',
-            'allowScriptAccess' => 'always',
-            'pluginspage' => 'http://www.macromedia.com/go/getflashplayer',
-            'autoplay' => 'false',
-            'autostart' => 'false',
-            'flashvars' => $flashvars,
-           );   
 
     $this->_object_params = array(
             'movie' => $source,

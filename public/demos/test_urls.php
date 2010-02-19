@@ -64,7 +64,7 @@ $verified_urls = array(
   'EbaumsWorld Audio' => 'http://www.ebaumsworld.com/audio/play/80534988/',
   'EbaumsWorld Videos' => 'http://www.ebaumsworld.com/video/watch/80915021/',
   'ESPN' => 'http://espn.go.com/video/clip?id=4923430',
-  'Fandome' => 'http://gamecocks.fandome.com/video/80199/Simpsons-Lisa-wont-be-a-Gamecock/',
+  'Fandome' => 'http://www.fandome.com/video/117532/Tiger-Woods-Press-Conference-2192010/',
   'Flickr' => 'http://www.flickr.com/photos/josefgrunig/2825797774/in/pool-video',
   'FunnyOrDie' => 'http://www.funnyordie.com/videos/6342db2270/head-over-heels-literal-video-version-from-dustfilms',
   'G4TV' => 'http://www.g4tv.com/xplay/videos/35891/Gaming_Update_010609.html',

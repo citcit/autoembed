@@ -40,8 +40,6 @@ direct inquires to the <a href="http://groups.google.com/group/autoembed/">AutoE
     if ($ae->parseUrl(base64_decode($_GET['url']))) {
       // Construct HTML tag for embedding the video
       $embed_tag = $ae->getEmbedCode();
-      // Extract the video's media params
-      $flash_params = $ae->getFlashParams();
       $object_params = $ae->getObjectParams();
       ?>
       <h2 style="margin:0;">Test Results for Site: <em><?=$ae->getStub('title')?></em></h2>
@@ -60,8 +58,6 @@ direct inquires to the <a href="http://groups.google.com/group/autoembed/">AutoE
       <h4>Embed Code</h4>
       <textarea style="width:100%;" rows="10"><?=htmlspecialchars($embed_tag)?></textarea>
       <br /><br />      
-      <h4>Flash Params</h4>
-      <pre><?var_dump($flash_params)?></pre>
       
       <h4>Object Params</h4>
       <pre><?var_dump($object_params)?></pre>
