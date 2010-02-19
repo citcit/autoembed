@@ -1,8 +1,37 @@
 Version 1.5
 -----------
+API
+  - Embed code output is now valid XHTML
 
 Stubs
-  - Added support for direct URLs to MP3s using Google audio player
+  - Added support for direct URLs to MP3s using 
+  Google audio player
+
+  - Corrected
+    CNet TV
+    EbaumsWorld (Audio & Video)
+    ESPN
+    Last.FM
+    Ted.com
+
+  - Removed
+    bored (no longer hosts video)
+    ClipLife (dead)
+    GotGame (dead)
+    iTV (dead)
+    iMeem (dead) (bought by myspace)
+    Joost (no easy way to get video url)
+    Jubii Tv (dead)
+    JumpCut (dead)
+    Milliyet (dead)
+    MoFile (dead)
+    SeeHaHa (dead)
+    SeequPod (dead)
+    Tm-Tube (poor site)
+    UUME (dead)
+    MSN (changed to bing video)
+    AOL Video (do not host video just restream from other sites)
+    MSN (Changed to bing)
 
 Version 1.4
 -----------

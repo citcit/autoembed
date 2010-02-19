@@ -298,7 +298,7 @@ class AutoEmbed {
       $flash_params .= '  ' . $param . '="' . $value . '"';    
     }
 
-    return sprintf("<object %s> %s <embed %s /> %s </object>", $object_attribs, $object_params, $flash_params, self::AE_TAG);
+    return sprintf("<object %s> %s  %s</object>", $object_attribs, $object_params, self::AE_TAG);
   }
 
   
@@ -315,6 +315,11 @@ class AutoEmbed {
       $source = str_ireplace('$'.$i, $this->_media_id[$i - 1], $source);
       $flashvars = str_ireplace('$'.$i, $this->_media_id[$i - 1], $flashvars);
     }
+
+    //$source = str_replace('&', '&amp;', $source);
+    //$flashvars = str_replace('&', '&amp;', $flashvars);
+    $source = htmlspecialchars($source, ENT_QUOTES, null, false);
+    $flashvars = htmlspecialchars($flashvars, ENT_QUOTES, null, false);
 
     $this->_flash_params = array(
             'type' => 'application/x-shockwave-flash',
@@ -340,11 +345,10 @@ class AutoEmbed {
             'pluginspage' => 'http://www.macromedia.com/go/getflashplayer',
             'autoplay' => 'false',
             'autostart' => 'false',
+            'flashvars' => $flashvars,
            );
 
     $this->_object_attribs = array(
-            'classid' => 'CLSID:D27CDB6E-AE6D-11CF-96B8-444553540000',
-            'codebase' => 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,115,0',
             'type' => 'application/x-shockwave-flash',
             'width' => $this->_stub['embed-width'],
             'height' => $this->_stub['embed-height'],
