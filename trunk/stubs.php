@@ -778,7 +778,7 @@ $AutoEmbed_stubs = array(
     'embed-src' => 'http://cdn.last.fm/webclient/s12n/s/53/lfmPlayer.swf',
     'embed-width' => '300',
     'embed-height' => '221',
-    'flashvars' => 'lang=en&amp;lfmMode=playlist&amp;FOD=true&amp;resname=$3&amp;restype=track&amp;artist=$2&amp;autostart=false',
+    'flashvars' => 'lang=en&amp;lfmMode=playlist&amp;FOD=true&amp;resname=$3&amp;restype=track&amp;artist=$2',
   ),
   array(
     'title' => 'Last.fm (Video)',
@@ -787,7 +787,7 @@ $AutoEmbed_stubs = array(
     'embed-src' => 'http://cdn.last.fm/videoplayer/l/17/VideoPlayer.swf',
     'embed-width' => '340',
     'embed-height' => '289',
-    'flashvars' => 'uniqueName=$3&amp;autostart=false&amp;FSSupport=true&amp;autoplay=false'
+    'flashvars' => 'uniqueName=$3&amp;FSSupport=true&amp;'
   ),
   array(
     'title' => 'Libero',
