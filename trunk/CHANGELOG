@@ -1,3 +1,32 @@
+Version 1.6
+-----------
+API
+  - Added data attribute to object tag to bring
+  back Firefox support
+
+Stubs
+  - Corrected
+    Youtube (broken in Firefox)
+    Yahoo Video
+    videoJug
+    VidMax
+    Trilulilu
+    StupidVideos
+    iReport
+
+  - Removed
+    videoNuz (no longer allow embeding of their content)
+    vidiac (rehost videos from other sources)
+    musopen (no longer relevant)
+    metatube (unable to derive video src)
+    CarPix TV (dead site)
+    Deezer (not a consistant way of displaying embeded items)
+    GotGame (dying site)
+    9You (can't format player size)
+    Blip (site provided embed code doesn't work)
+    SportsLine (no longer allow of embedding video)
+
+
 Version 1.5
 -----------
 API

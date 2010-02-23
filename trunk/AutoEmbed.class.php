@@ -272,7 +272,6 @@ class AutoEmbed {
 
     $this->_object_params = array(
             'movie' => $source,
-            'wmode' => 'transparent',
             'quality' => 'high',
             'allowFullScreen' => 'true',
             'allowScriptAccess' => 'always',
@@ -284,6 +283,7 @@ class AutoEmbed {
 
     $this->_object_attribs = array(
             'type' => 'application/x-shockwave-flash',
+            'data' => $source,
             'width' => $this->_stub['embed-width'],
             'height' => $this->_stub['embed-height'],
            );
