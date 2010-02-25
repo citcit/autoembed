@@ -1,3 +1,8 @@
+Version 1.7
+API
+  - Added getObjectAttribs() (Thanks Chris Jackson)
+
+
 Version 1.6
 -----------
 API

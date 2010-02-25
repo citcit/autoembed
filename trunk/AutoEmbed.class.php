@@ -102,6 +102,15 @@ class AutoEmbed {
   }
 
   /**
+   * Return object attribute
+   *
+   * @return array - object attribute
+   */
+  public function getObjectAttribs() {
+    return $this->_object_attribs;
+  }
+
+  /**
    * Convert the url to an embedable tag
    *
    * return string - the embed html
