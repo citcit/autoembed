@@ -16,9 +16,8 @@ and <em>Jason Hines</em> of <a target="_new" href="http://devtwo.com/">DevTwo So
 <p>AutoEmbed is licensed under the <a href="http://www.gnu.org/licenses/lgpl.txt">GNU Lesser General Public License</a>.</p>
 
 <div class="box">
-  <p>Christopher John Jackson has created a custom port of AutoEmbed and is
-  available on his blog as a plugin for Wordpress and MyBB forum software.</p>
-  <p><a href="http://cj-jackson.com/projects/autoembed/">Autoembed and JW Player Plugin for Wordpress and MyBB</a></p>
+  <p>For users of WordPress and MyBB forum software, CJ Jackson has created a plugin for AutoEmbed and FlowPlayer.</p>
+  <p><a href="http://cj-jackson.com/projects/autoembed/">Get the AutoEmbed and FlowPlayer Plugin for Wordpress and MyBB!</a></p>
 </div>
 
 <div class="box">
@@ -26,7 +25,7 @@ and <em>Jason Hines</em> of <a target="_new" href="http://devtwo.com/">DevTwo So
     <h3 style="margin:0;">Donations? Hey Thanks!</h3>
     <p>We offer this service and product free of charge, and are glad to do so.  However, sending
     us a few bucks is hands-down the best way to get your suggestion or feature request
-    noticed.  Plus, it helps pay our hosting costs to keep this project going.</p>
+    noticed.  Also, it helps pay the hosting costs to keep this project going.</p>
   </div>
   <div style="float:right;">
     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_new">
