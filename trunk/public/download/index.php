@@ -10,9 +10,6 @@ include "../includes/header.inc.php";
 
 <p><img src="<?=BASE_URL?>/images/download.png" align="absmiddle" /> <a href="http://autoembed.googlecode.com/files/AutoEmbed-1.6.tar.gz">AutoEmbed PHP Class</a> (1.6 Released 2/23/10)</p>
 
-<p><img src="<?=BASE_URL?>/images/download.png" align="absmiddle" /> <a href="http://autoembed.googlecode.com/files/wp-autoembed.1.0.zip">AutoEmbed WordPress Plugin</a> (1.0 Released 4/26/09)</p>
-
-
 <p><em>AutoEmbed</em> is the product of collaborative development between
 <em>Corey Wilson</em> of <a target="_new" href="http://2catdesigns.com">2catdesigns</a>
 and <em>Jason Hines</em> of <a target="_new" href="http://devtwo.com/">DevTwo Software</a>.</p>
