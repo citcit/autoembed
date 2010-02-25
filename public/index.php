@@ -42,14 +42,6 @@ on a website.</p>
 <a href="http://imeem.com"><img alt="Imeem" class="logo" src="<?=BASE_URL?>/images/logos/imeem.png" /></a> 
 </div>
 
-<div class="box">
-
-<p><b>Some programming is required.</b> <em>AutoEmbed</em> is available as a 
-<a href="api/">web service</a> for performing <em>URL to Embedded Video HTML</em> conversions, 
-and is available for <a href="download/">download</a> as a PHP class, licensed
-under the LGPL.</p>
-
-</div>
 <?
 include "includes/footer.inc.php";
 ?>

@@ -18,7 +18,7 @@ define('BASE_URL','http://autoembed.com');
     <ul>
       <li class="<?=@$about_current?>"><a href="<?=BASE_URL?>/about/">Synopsis</a></li>
       <li class="<?=@$demo_current?>"><a href="<?=BASE_URL?>/demos/">Demonstrations</a></li>
-      <li class="<?=@$api_current?>"><a href="<?=BASE_URL?>/api/">API Service</a></li>
+      <!--<li class="<?=@$api_current?>"><a href="<?=BASE_URL?>/api/">API Service</a></li>-->
       <li class="<?=@$download_current?>"><a href="<?=BASE_URL?>/download/">Download</a></li>
       <li class="<?=@$support_current?>"><a href="<?=BASE_URL?>/support/">Support</a></li>
       <br class="clear" />
