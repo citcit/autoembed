@@ -183,6 +183,15 @@ $AutoEmbed_stubs = array(
     'embed-width' => '512',
     'embed-height' => '408',
   ),
+ array(
+   'title' => 'Blip.tv',
+   'website' => 'http://www.blip.tv',
+   'url-match' => 'http://blip\.tv/(play|file)/([0-9]*)',
+   'fetch-match' => '<link rel="video_src" href="([A-z:/\.0-9-_=]*)',
+   'embed-src' => '$2',
+   'embed-width' => '500',
+   'embed-height' => '315',
+ ),
   array(
     'title' => 'BoFunk',
     'website' => 'http://www.bofunk.com',
@@ -1197,6 +1206,14 @@ $AutoEmbed_stubs = array(
     'embed-src' => '$2&amp;color=e4e4e4',
     'embed-width' => '207',
     'embed-height' => '27',
+  ),
+  array(
+    'title' => 'Twitvid',
+    'website' => 'http://www.twitvid.com/',
+    'url-match' => 'http://(?:www\.)?twitvid\.com/([0-9a-z]{1,10})',
+    'embed-src' => 'http://www.twitvid.com/player/$2',
+    'embed-width' => '425',
+    'embed-height' => '344',
   ),
   array(
     'title' => 'UOL VideoLog',
