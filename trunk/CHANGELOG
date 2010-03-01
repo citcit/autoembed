@@ -1,7 +1,11 @@
 Version 1.7
 API
-  - Added getObjectAttribs() (Thanks Chris Jackson)
+  - Added getObjectAttribs() (thanks Chris Jackson)
 
+Stubs
+  - Added
+    TwitVid
+    Blip.tv (thanks Bryan Copeland)
 
 Version 1.6
 -----------
