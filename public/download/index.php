@@ -16,14 +16,14 @@ and <em>Jason Hines</em> of <a target="_new" href="http://devtwo.com/">DevTwo So
 <p>AutoEmbed is licensed under the <a href="http://www.gnu.org/licenses/lgpl.txt">GNU Lesser General Public License</a>.</p>
 
 <div class="box">
-  <h3 style="margin:0;">For users of WordPress and MyBB forum software...</h3>
+  <h3>For users of WordPress and MyBB forum software...</h3>
   <p>AEFlowPlayer is a plugin available for WordPress and MyBB forums that adds AutoEmbed to your site.</p>
   <p><a href="http://code.google.com/p/aeflowplayer/">Visit the AEFlowPlayer Project</a></p>
 </div>
 
 <div class="box">
   <div style="float:left;width:70%;">
-    <h3 style="margin:0;">Donations? Hey Thanks!</h3>
+    <h3>Donations? Hey Thanks!</h3>
     <p>We offer this service and product free of charge, and are glad to do so.  However, sending
     us a few bucks is hands-down the best way to get your suggestion or feature request
     noticed.  Also, it helps pay the hosting costs to keep this project going.</p>
