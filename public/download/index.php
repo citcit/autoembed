@@ -6,8 +6,6 @@ include "../includes/header.inc.php";
 
 <h2>Download AutoEmbed</h2>
 
-<p>AutoEmbed is available for download in a few different varieties:</p>
-
 <p><img src="<?=BASE_URL?>/images/download.png" align="absmiddle" /> <a href="http://autoembed.googlecode.com/files/AutoEmbed-1.6.tar.gz">AutoEmbed PHP Class</a> (1.6 Released 2/23/10)</p>
 
 <p><em>AutoEmbed</em> is the product of collaborative development between
