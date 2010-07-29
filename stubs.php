@@ -871,10 +871,11 @@ $AutoEmbed_stubs = array(
   array(
     'title' => 'MP3 Audio',
     'website' => '',
-    'url-match' => 'http://([^"\'\`\<\>\@\*\$]*?)\.mp3',
-    'embed-src' => 'http://www.google.com/reader/ui/3247397568-audio-player.swf?audioUrl=$1',
+    'url-match' => '(http://[^"\'\`\<\>\@\*\$]*?\.mp3)$',
+    'embed-src' => 'http://www.google.com/reader/ui/3523697345-audio-player.swf',
     'embed-width' => '400',
     'embed-height' => '27',
+    'flashvars' => 'audioUrl=$2'
   ),
   array(
     'title' => 'MyNet',
