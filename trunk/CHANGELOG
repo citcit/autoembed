@@ -1,4 +1,10 @@
+Version 1.7.1
+-------------
+Stubs
+   - Fixed direct mp3 embed
+
 Version 1.7
+-----------
 API
   - Added getObjectAttribs() (thanks Chris Jackson)
 
