@@ -17,7 +17,7 @@ If you intend to use AutoEmbed in your commercial project, you must purchase a l
 
 <p><img src="<?=BASE_URL?>/images/download.png" align="absmiddle" /> <a href="http://autoembed.googlecode.com/files/AutoEmbed-1.6.tar.gz">Download AutoEmbed</a> (Version 1.6 Released 2/23/10)</p>
 
-<h2>Purchase Commercial License</h2>
+<h3>Purchase Commercial License</h3>
 <p>AutoEmbed is available for commercial use in 2 varieties:</p>
 
 
