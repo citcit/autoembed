@@ -20,7 +20,7 @@ If you intend to use AutoEmbed in your commercial project, you must purchase a l
 
 <div class="box">
   <div style="float:left;width:50%;">
-    <h2>Purchase Commercial License</h2>
+    <h2 style="margin-top:0;">Purchase Commercial License</h2>
     <p><b>Single License</b> - This license allows you to use AutoEmbed on a single website. All updates and new versions of this are free of charge for existing customers.</p>
     <p><b>Developer License</b> - This license allows you to use AutoEmbed on multiple websites. All updates and new versions of this are free of charge for existing customers.</p>
   </div>
