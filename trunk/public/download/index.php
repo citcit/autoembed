@@ -6,12 +6,12 @@ include "../includes/header.inc.php";
 
 <h2>Download AutoEmbed</h2>
 
+<p><img src="<?=BASE_URL?>/images/download.png" align="absmiddle" /> <a href="http://autoembed.googlecode.com/files/AutoEmbed-1.6.tar.gz">Download AutoEmbed</a> (Version 1.6 Released 2/23/10)</p>
+
 <p><em>AutoEmbed</em> is the product of collaborative development between
 <em>Corey Wilson</em> of <a target="_new" href="http://2catdesigns.com">2catdesigns</a>
 and <em>Jason Hines</em> of <a target="_new" href="http://devtwo.com/">DevTwo Software</a>.</p>
 
-
-<p><img src="<?=BASE_URL?>/images/download.png" align="absmiddle" /> <a href="http://autoembed.googlecode.com/files/AutoEmbed-1.6.tar.gz">Download AutoEmbed</a> (Version 1.6 Released 2/23/10)</p>
 
 <p>AutoEmbed is licensed under the <a href="http://www.gnu.org/licenses/lgpl.txt">GNU Lesser General Public License</a> and free to use for non-commercial use only.
 If you intend to use AutoEmbed in your commercial project, you must purchase a license below.</p>
