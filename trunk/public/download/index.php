@@ -22,8 +22,8 @@ If you intend to use AutoEmbed in your commercial project, you must purchase a l
 
 <div class="box">
   <div style="float:left;width:50%;">
-    <p><b>Single License</b> - This license allows you to use the theme on a single website. All updates and new versions of this are free of charge for existing customers.</p>
-    <p><b>Developer License</b> - This license allows you to use on a multiple websites. All updates and new versions of this are free of charge for existing customers.</p>
+    <p><b>Single License</b> - This license allows you to use AutoEmbed on a single website. All updates and new versions of this are free of charge for existing customers.</p>
+    <p><b>Developer License</b> - This license allows you to use AutoEmbed on multiple websites. All updates and new versions of this are free of charge for existing customers.</p>
   </div>
   <div style="text-align:center;float:right;">
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
