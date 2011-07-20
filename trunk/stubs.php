@@ -42,7 +42,8 @@ $AutoEmbed_stubs = array(
     'embed-src' => 'http://www.youtube.com/v/$2&rel=0&fs=1&hd=1',
     'embed-width' => '480',
     'embed-height' => '295',
-    'image-src' => 'http://img.youtube.com/vi/$2/0.jpg'
+    'image-src' => 'http://img.youtube.com/vi/$2/0.jpg',
+    'iframe-player' => 'http://www.youtube.com/embed/$2',
   ),
   array(
     'title' => 'YouTube (Playlists)',
@@ -100,6 +101,7 @@ $AutoEmbed_stubs = array(
     'embed-src' => 'http://vimeo.com/moogaloop.swf?clip_id=$2&server=vimeo.com&fullscreen=1&show_title=1&show_byline=1&show_portrait=0&color=01AAEA',
     'embed-width' => '400',
     'embed-height' => '302',
+    'iframe-player' => 'http://player.vimeo.com/video/$2',
   ),
   array(
     'title' => '123video',
