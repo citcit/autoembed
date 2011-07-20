@@ -116,6 +116,10 @@ class AutoEmbed {
    * return string - the embed html
    */
   public function getEmbedCode() {
+    if ( isset($this->_stub['iframe-player']) )
+    {
+      return $this->_buildiFrame();
+    }
     return $this->_buildObject();
   }
 
@@ -261,7 +265,22 @@ class AutoEmbed {
     return sprintf("<object %s> %s  %s</object>", $object_attribs, $object_params, self::AE_TAG);
   }
 
-  
+  /**
+   * Build an iFrame player
+   */
+  private function _buildiFrame() {
+    $source = $this->_stub['iframe-player'];
+    
+    for ($i=1; $i<=count($this->_media_id); $i++) {
+      $source = str_ireplace('$'.$i, $this->_media_id[$i - 1], $source);
+    }
+    
+    $width = $this->_object_attribs['width'];
+    $height = $this->_object_attribs['height'];
+
+    return sprintf('<iframe type="text/html" width="%s" height="%s" src="%s" frameborder="0"></iframe>', $width, $height, $source);
+  }
+
   /**
    * Set the default params for the type of
    * stub we are working with

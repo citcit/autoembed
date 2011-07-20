@@ -1,3 +1,9 @@
+Version 1.8
+------------
+API
+ - Added support for HTML5 iframe players
+
+
 Version 1.7.1
 -------------
 Stubs
